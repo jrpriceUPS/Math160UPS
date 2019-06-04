@@ -1,0 +1,10 @@
+Package: Math160UPS
+Title: Suite of Functions for Math 160 Classes at the University of Puget Sound
+Version: 0.0.0.9000
+Authors@R: person("Jake", "Price", email = "jrprice@pugetsound.edu", role = c("aut", "cre"))
+Description: This package contains a collection of functions to help students conduct statistical analysis in R and R Studio. It is geared towards Math 160 students at the University of Puget Sound (novices). Every function returns results and produces plots, but also provides sample code of how to produce the results without using the library. This is very useful pedagogically.
+Depends: R (>= 3.5.1)
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
