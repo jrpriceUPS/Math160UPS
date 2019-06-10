@@ -1,3 +1,26 @@
+#' Find Residuals
+#'
+#' This function allows you to find and plot the residuals from a linear fit of two datasets.
+#' @export
+#' @examples
+#' > x = c(1,2,3,4,5,6,7)
+#' > y = c(2.5,5.1,6.4,8.4,10.8,13.4,15.3)
+#' > find_residuals()
+#' What is the name of the list with your x variable? x
+#' What is the name of the list with your y variable? y
+#' The best fit line for these data is:
+#'   y = 2.12142857142857 x (x) + 0.357142857142856
+#' 
+#' 
+#' You can find the residuals by saving the model:
+#'   model = lm(y~x)
+#' 
+#' and then typing:
+#'   resid(model))
+#' 
+#' To plot them, type:
+#'   plot(x,resid(model))
+
 find_residuals <- function(){
   
   varname1 = readline("What is the name of the list with your x variable? ")

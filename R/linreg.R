@@ -1,3 +1,29 @@
+#' Simple Linear Regression
+#'
+#' This function allows you to plot two variables against one another, execute simple linear regression between two saved datasets, and view the least-squares fit model with the line added to the plot.
+#' @export
+#' @examples
+#' > x = c(1,2,3,4,5,6,7)
+#' > y = c(2.5,5.1,6.4,8.4,10.8,13.4,15.3)
+#' > linreg()
+#' What is the name of the list with your x variable? x
+#' What is the name of the list with your y variable? y
+#' The best fit line for these data is:
+#'   y = 2.12142857142857 x (x) + 0.357142857142856
+#' 
+#' 
+#' You can plot these data by typing:
+#'   plot(x,y)
+#' 
+#' You can find the best fit line by typing:
+#'   lm(y~x)
+#' 
+#' You can add the best fit line to the plot by saving the model:
+#'   model = lm(y~x)
+#' 
+#' and then adding it to the plot:
+#'   abline(model)
+
 linreg <- function(){
   
   varname1 = readline("What is the name of the list with your x variable? ")
