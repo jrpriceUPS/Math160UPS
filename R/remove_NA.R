@@ -10,7 +10,7 @@
 #' Make sure you typed *your new list name here* = remove_NA(). If not, press Esc to cancel.
 #' 
 #' What is the name of the list with your data? x
-#' Removed 2 NAs!
+#' Removed 2 NAs!xx
 #'  
 #' You can do this yourself by typing:
 #' *new list name* = x[!is.na(x)]
