@@ -29,8 +29,19 @@ linreg <- function(){
   varname1 = readline("What is the name of the list with your x variable? ")
   varname2 = readline("What is the name of the list with your y variable? ")
   
-  x = get(varname1)
-  y = get(varname2)
+  if(grepl("$", varname1, fixed=TRUE)){
+    names = strsplit(varname1,"\\$")
+    frame = get(names[[1]])
+    x = frame[[names[[1]][2]]]
+  } else{
+    x = get(varname1)}
+  
+  if(grepl("$", varname2, fixed=TRUE)){
+    names = strsplit(varname2,"\\$")
+    frame = get(names[[1]])
+    y = frame[[names[[1]][2]]]
+  } else{
+    y = get(varname2)}
   
   
   plot(x,y,xlab=varname1,ylab=varname2)

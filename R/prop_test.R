@@ -234,5 +234,5 @@ prop_test <- function(){
   
   
   
-  
+  }
 }

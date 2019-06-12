@@ -7,7 +7,7 @@
 chi_test()
 }
 \description{
-This function asks you a sequence of questions in order to execute a proportion test. It finds a confidence interval and a p-value, produces a plot, and indicates how this could be queried directly from R.
+This function asks you a sequence of questions in order to execute a proportion test. It finds a p-value, produces a plot, and indicates how this could be queried directly from R.
 }
 \examples{
 #' > chi_test()

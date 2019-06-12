@@ -26,13 +26,31 @@ find_residuals <- function(){
   varname1 = readline("What is the name of the list with your x variable? ")
   varname2 = readline("What is the name of the list with your y variable? ")
   
-  x = get(varname1)
-  y = get(varname2)
+  if(grepl("$", varname1, fixed=TRUE)){
+    names = strsplit(varname1,"\\$")
+    frame = get(names[[1]])
+    x = frame[[names[[1]][2]]]
+  } else{
+    x = get(varname1)}
+  
+  if(grepl("$", varname2, fixed=TRUE)){
+    names = strsplit(varname2,"\\$")
+    frame = get(names[[1]])
+    y = frame[[names[[1]][2]]]
+  } else{
+    y = get(varname2)}
+  
+  xnew = x[!is.na(x)&!is.na(y)]
+  ynew = y[!is.na(x)&!is.na(y)]
+  x = xnew
+  y = ynew
+  
+  
   regress = lm(y ~ x)
   
   intercept = as.numeric(coefficients(regress)[1])
   slope = as.numeric(coefficients(regress)[2])
-  
+  cat(paste("You should first remove any NAs from ",varname1," and ",varname2," using remove_NA2().\n\n",sep=""))
   cat(paste("The best fit line for these data is:"))
   cat("\n")
   cat(paste(varname2," = ",toString(slope)," x (",varname1,") + ",toString(intercept),sep=""))
@@ -45,9 +63,10 @@ find_residuals <- function(){
   cat(paste("model = lm(",varname2,"~",varname1,")",sep=""))
   cat("\n")
   cat("\n")
+
   
-  resid(regress)
-  plot(x,resid(regress),xlab=varname1,ylab="Residual")
+  resid(regress,na.action=na.exclude)
+  plot(x,resid(regress,na.action=na.exclude),xlab=varname1,ylab="Residual")
     
   cat(paste("and then typing:"))
   cat("\n")

@@ -247,11 +247,24 @@ t_test <- function(){
       if(vec=="whole"){
         varname1 = readline("What is the name of the variable for the first set of measurements? ")
         varname2 = readline("What is the name of the variable for the second set of measurements? ")
-        data1 = get(varname1)
+        if(grepl("$", varname1, fixed=TRUE)){
+          names = strsplit(varname1,"\\$")
+          frame = get(names[[1]])
+          data1 = frame[[names[[1]][2]]]
+        } else{
+          data1 = get(varname1)}
+        data1 = data1[!is.na(data1)]
         xbar1 = mean(data1)
         s1 = sd(data1)
         n = length(data1) 
-        data2 = get(varname2)
+       
+        if(grepl("$", varname2, fixed=TRUE)){
+          names = strsplit(varname2,"\\$")
+          frame = get(names[[1]])
+          data2 = frame[[names[[1]][2]]]
+        } else{
+          data2 = get(varname2)}
+        data2 = data2[!is.na(data2)]
         xbar2 = mean(data2)
         s2 = sd(data2)
         
@@ -432,11 +445,25 @@ t_test <- function(){
       if(vec=="whole"){
         varname1 = readline("What is the name of the variable for the first set of measurements? ")
         varname2 = readline("What is the name of the variable for the second set of measurements? ")
-        data1 = get(varname1)
+        
+        if(grepl("$", varname1, fixed=TRUE)){
+          names = strsplit(varname1,"\\$")
+          frame = get(names[[1]])
+          data1 = frame[[names[[1]][2]]]
+        } else{
+          data1 = get(varname1)}
+        data1 = data1[!is.na(data1)]
         xbar1 = mean(data1)
         s1 = sd(data1)
         n1 = length(data1) 
-        data2 = get(varname2)
+        
+        if(grepl("$", varname2, fixed=TRUE)){
+          names = strsplit(varname2,"\\$")
+          frame = get(names[[1]])
+          data2 = frame[[names[[1]][2]]]
+        } else{
+          data2 = get(varname2)}
+        data2 = data2[!is.na(data2)]
         xbar2 = mean(data2)
         s2 = sd(data2)
         n2 = length(data2)
@@ -476,6 +503,10 @@ t_test <- function(){
       }
       
       conf_level = as.numeric(readline("What is your desired confidence level? "))
+      while(conf_level<0 | conf_level>1){cat('Please choose a confidence level between 0 and 1')
+        conf_level = as.numeric(readline("What is your desired confidence level? "))
+      }
+      
       sidedness = readline("Are you checking whether the mean of the second population is less, greater, or different than the mean of the first population? Possible answers are 'less', 'greater', and 'different'. ")
       if(sidedness=="different"){
         sidedness = "both"
@@ -599,7 +630,13 @@ t_test <- function(){
     
     if(vec=="whole"){
       varname = readline("What is the name of your variable? ")
-      data = get(varname)
+      if(grepl("$", varname, fixed=TRUE)){
+        names = strsplit(varname,"\\$")
+        frame = get(names[[1]])
+        data = frame[[names[[1]][2]]]
+      } else{
+        data = get(varname)}
+      data = data[!is.na(data)]
       xbar = mean(data)
       s = sd(data)
       n = length(data)
@@ -620,6 +657,9 @@ t_test <- function(){
     
     mu_0 = as.numeric(readline("What is the theoretical mean you are testing against (called mu_0)? "))
     conf_level = as.numeric(readline("What is your desired confidence level? "))
+    while(conf_level<0 | conf_level>1){cat('Please choose a confidence level between 0 and 1')
+      conf_level = as.numeric(readline("What is your desired confidence level? "))
+    }
     sidedness = readline("Are you doing a one-sided or two-sided test? Possible answers are 'less', 'greater', and 'two-sided'. ")
     if(sidedness=="two-sided"){
       sidedness = "both"
