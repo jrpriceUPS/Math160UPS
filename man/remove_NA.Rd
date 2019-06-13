@@ -2,7 +2,7 @@
 % Please edit documentation in R/remove_NA.R
 \name{remove_NA}
 \alias{remove_NA}
-\title{DIDITWORKRemove NAs}
+\title{Remove NAs}
 \usage{
 remove_NA()
 }
