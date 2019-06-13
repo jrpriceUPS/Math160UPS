@@ -2,7 +2,7 @@
 % Please edit documentation in R/remove_NA.R
 \name{remove_NA}
 \alias{remove_NA}
-\title{Remove NAs}
+\title{DIDITWORKRemove NAs}
 \usage{
 remove_NA()
 }
@@ -16,7 +16,7 @@ Remember! remove_NA() needs to know what you want the new list name to be!
 Make sure you typed *your new list name here* = remove_NA(). If not, press Esc to cancel.
 
 What is the name of the list with your data? x
-Removed 2 NAs!
+Removed 2 NAs!xx
  
 You can do this yourself by typing:
 *new list name* = x[!is.na(x)]

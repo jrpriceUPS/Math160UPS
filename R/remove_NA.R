@@ -1,4 +1,4 @@
-#' Remove NAs
+#' DIDITWORKRemove NAs
 #'
 #' This function allows you to remove the NAs found in a list you are working with and save it to a new list.
 #' @keywords processing
