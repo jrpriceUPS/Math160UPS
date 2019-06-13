@@ -7,7 +7,7 @@
 update_code()
 }
 \description{
-This function updates your library to the newest version and sets those to become available.
+This function updates your library to the newest version and sets those to become available. testtesttest
 }
 \examples{
 > update_code()
