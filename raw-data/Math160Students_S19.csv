@@ -1,0 +1,167 @@
+ID,Section,HSGPA,UPSGPA,SATM,SATR,SATW,ACT,Sex,Gender,Height,Weight,ShoeSz,Class,HSState,PubPriv,BirthMonth,Handedness,Shower,Work,Study,Exercise,CompLeisure,FinAid,TextAmt,TextPct,TextType,DietPref,Coffee,MacPC,Athlete,States,Siblings,OldestParent,YoungestParent,Shoes,Salary,Major
+19111,F -Hieta-aho (2 p.m.),3.76,2.5,430,500,560,21,Female (XX),Female,63,109,6.5,Freshman,Washington,Public,June,Right,20,2,15,5,4,Yes,300,100,Purchased Used,No Preference,Yes,Mac,No,8,2,48,47,14,,UND
+19112,E - Price (1 p.m.),3.97,2.42,620,680,680,,Female (XX),Female,63,104,6.5,Freshman,Arizona,Public,June,Right,15,4,14,4,21,Yes,260,100,Purchased Used,Vegan or Vegetarian,Yes,Mac,No,30,1,46,45,35,30000,UND
+19113,B - Pickard (8 a.m.),3.7,2.42,,,,27,Female (XX),Female,63,135,7.5,Freshman,Hawaii,Private,October,Right,7,1,16,4,7,Yes,300,100,Purchased Used,Vegan or Vegetarian,No,Mac,No,6,1,53,51,10,10000,Social Science
+19114,B - Pickard (8 a.m.),3.8,,,,,29,Female (XX),Female,66,140,7,Freshman,California,Public,October,Left,20,0,6,3,5,Yes,400,97,Purchased Used,Vegan or Vegetarian,Yes,Mac,No,12,3,65,50,7,,UND
+19115,H - Paradise (2 p.m.),4,2.8,,,,,Female (XX),Female,62,90,5.5,Freshman,Colorado,Public,May,Left,20,9,10,0,5,Yes,,,,No Preference,No,Mac,No,6,1,52,50,9,,Business
+19116,B - Pickard (8 a.m.),3.8,3.83,,,,34,Female (XX),Female,66,140,8.5,Freshman,California,Public,March,Left,5,,15,,,Yes,400,83,Borrowed from a Friend,Other,No,Mac,No,21,1,57,56,12,,UND
+19117,H - Paradise (2 p.m.),3.84,3.5,640,580,500,,Male (XY),Male,73,178,12,Freshman,Washington,Public,September,Right,5,2,15,5,10,Yes,160,100,Purchased New,Vegan or Vegetarian,No,Mac,No,14,1,65,50,8,26000,Humanities
+19118,G - Rushton (2 p.m.),3.32,2.5,,,,24,Female (XX),Female,63,113,6.5,,Minnesota,Private,August,Right,10,0,30,2,30,No,200,20,Purchased Used,No Preference,No,Mac,No,18,3,64,59,14,25000,UND
+19119,C - Gibson (12 noon),4,3.49,,,,30,Female (XX),Female,68,160,9,Junior,Colorado,Private,April,Right,20,0,21,14,9,Yes,200,100,Purchased eBook,Other,Yes,Mac,Yes,38,1,64,51,20,70000,Science
+19120,E - Price (1 p.m.),3.5,1.87,,,,21,Female (XX),Female,69,140,11,Freshman,Arizona,Public,October,Right,20,9,30,17,20,Yes,350,100,Purchased Used,Vegan or Vegetarian,No,Mac,Yes,12,3,56,49,5,4000,UND
+19121,B - Pickard (8 a.m.),3.8,3.5,570,,,,Female (XX),Female,64,115,7.5,Freshman,Washington,Public,August,Right,15,6,9,0,4,Yes,100,100,Purchased Used,No Preference,Yes,Mac,No,5,1,50,49,15,20000,UND
+19122,F -Hieta-aho (2 p.m.),3.87,3.67,,,,26,Female (XX),Female,68,130,8,Freshman,Wisconsin,Public,November,Right,7,0,20,3,10,Yes,200,100,Purchased Used,Vegan or Vegetarian,Yes,Mac,No,20,1,60,48,10,40000,UND
+19123,A - Dove (8 a.m.),3.66,3.42,,,,31,Female (XX),Female,70,150,9,Freshman,Tennessee,Private,July,Right,15,10,7,4,7,Yes,300,100,Purchased Used,No Preference,Yes,Mac,No,38,2,51,50,25,50000,Fine Arts 
+19124,I - Thatcher (10 a.m.),3.2,2.5,,,,29,Female (XX),Female,66,135,9,Freshman,Colorado,Private,July,Right,20,10,10,8,16,Yes,62,0,Purchased Used,Vegan or Vegetarian,Yes,Mac,No,20,4,64,50,20,20000,Social Science
+19125,G - Rushton (2 p.m.),3.98,3.5,,,,33,Female (XX),Female,56,130,7.5,Freshman,Minnesota,Public,June,Right,10,4,10,2,3,Yes,200,100,Purchased Used,Vegan or Vegetarian,Yes,Mac,No,20,3,49,49,5,50000,Business
+19126,C - Gibson (12 noon),4,3.81,,,,27,Male (XY),Male,68,220,10.5,Senior,California,Public,June,Right,10,6,30,2,50,Yes,200,95,Borrowed from a Friend,No Preference,No,Mac,No,13,2,45,43,25,0,Science
+19127,A - Dove (8 a.m.),3.87,,,,,21,Female (XX),Female,74,190,10,Freshman,Oregon,Public,December,Right,10,0,5,1,4,Yes,350,100,Purchased Used,No Preference,Yes,Mac,No,13,1,56,53,20,10000,Social Science
+19128,D - Rushton (12 noon),3.82,3.63,720,740,680,,Female (XX),Female,66,140,8.5,Junior,Massachusetts,Public,January,Right,20,20,14,6,7,Yes,100,100,Borrowed from a Friend,Kosher,Yes,Mac,No,16,2,60,56,20,,Humanities
+19129,A - Dove (8 a.m.),3.4,,,,,22,Female (XX),Female,66,120,7,Sophomore,New Mexico,Public,June,Right,6,1,35,7,4,Yes,50,50,Purchased Used,Vegan or Vegetarian,No,Mac,No,25,1,62,58,20,11,UND
+19130,G - Rushton (2 p.m.),3.57,,,,,30,Female (XX),Female,69,160,10,Freshman,Wyoming,Public,May,Right,10,1,20,5,10,Yes,,90,Purchased Used,No Preference,Yes,Mac,No,11,1,49,49,5,,UND
+19131,H - Paradise (2 p.m.),4,3.7,,,,30,Female (XX),Female,68,145,8.5,Freshman,Texas,Private,December,Right,10,,,,,Yes,,,,Vegan or Vegetarian,No,Mac,No,,1,49,49,6,,Business
+19132,G - Rushton (2 p.m.),3.4,3.5,,,,,Male (XY),Male,72,160,12,Freshman,Oregon,Private,September,Right,6,0,4,2,2,Yes,300,100,Rented book,Other,No,Mac,Yes,17,3,72,59,6,60000,UND
+19133,B - Pickard (8 a.m.),3.2,3.67,,,,27,Female (XX),Female,61,105,5.5,Freshman,New Mexico,Private,May,Right,10,0,25,6,50,Yes,148,90,Purchased Used,No Preference,Yes,Mac,No,12,1,68,60,20,25000,Business
+19134,A - Dove (8 a.m.),3.6,2.8,,,,28,Female (XX),Female,55,174,,Junior,California,Public,April,Right,20,9,10,6,10,Yes,200,100,Purchased Used,No Preference,No,Mac,No,15,3,58,48,15,50000,Humanities
+19135,A - Dove (8 a.m.),3.8,3.3,,,,,Female (XX),Female,59,115,6,Junior,Washington,Public,March,Right,20,4,14,10,21,Yes,240,75,Purchased Used,No Preference,No,Windows(PC),No,2,7,63,42,13,30000,Science
+19136,I - Thatcher (10 a.m.),3.83,3.37,,,,23,Female (XX),Female,64,120,8,Freshman,Oregon,Private,August,Left,,5,,4,,Yes,,,,Other,Yes,Windows(PC),No,20,4,,,14,,Business
+19137,C - Gibson (12 noon),3.3,3.1,,,,,Female (XX),Female,,,8,Sophomore,California,Public,August,Right,,,,,,Yes,300,100,Borrowed from a Friend,Vegan or Vegetarian,Yes,Mac,No,5,0,57,54,,,Social Science
+19138,A - Dove (8 a.m.),3.6,2.3,,,,23,Female (XX),Female,58,105,4,Freshman,California,Public,June,Ambidextrous (Both),8,3,15,8,4,Yes,600,100,Other,No Preference,No,Mac,Yes,45,1,56,55,20,10000,Science
+19139,E - Price (1 p.m.),3.75,3.69,,,,,Female (XX),Female,66,140,9.5,Freshman,Colorado,Public,September,Right,10,6,12,3,15,Yes,300,25,Purchased Used,No Preference,No,Windows(PC),No,20,2,53,49,15,10000,Social Science
+19140,C - Gibson (12 noon),4,3.9,,,,28,Female (XX),Female,64,107,7,Freshman,Missouri,Private,December,Left,20,10,40,1,5,Yes,270,0,Purchased Used,Vegan or Vegetarian,Yes,Windows(PC),No,30,2,58,57,34,40000,Social Science
+19141,I - Thatcher (10 a.m.),3.89,3.7,,,,,Female (XX),Female,69,133,8.5,Sophomore,Washington,Private,April,Right,10,0,35,7,7,Yes,150,0,Purchased New,No Preference,No,Mac,No,12,1,59,54,20,,UND
+19142,E - Price (1 p.m.),3.2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+19143,G - Rushton (2 p.m.),4,3.84,600,690,690,32,Female (XX),Female,68,140,9,Freshman,Arizona,Other,September,Right,15,9,40,7,6,Yes,99,100,Purchased Used,No Preference,No,Mac,No,21,1,56,56,12,,Social Science
+19144,G - Rushton (2 p.m.),4,2.4,550,600,600,24,Female (XX),Female,67,150,10,Freshman,Texas,Public,August,Right,10,15,20,6,20,Yes,400,100,Purchased Used,No Preference,No,Mac,Yes,18,5,49,49,25,50000,UND
+19145,A - Dove (8 a.m.),3.86,3.92,680,710,710,,Female (XX),Female,68,140,12,Freshman,Colorado,Public,March,Right,15,0,20,6,3,Yes,130,100,Purchased Used,No Preference,No,Mac,No,21,1,55,53,10,57000,Science
+19146,F -Hieta-aho (2 p.m.),4,3.84,540,750,760,,Female (XX),Female,64,112,7.5,Junior,Washington,Public,August,Right,15,8,25,8,4,Yes,500,70,Purchased Used,No Preference,No,Mac,No,6,6,47,45,15,150000,Science
+19147,H - Paradise (2 p.m.),3.8,3.3,,,,,Female (XX),Female,68,,9,Freshman,Washington,Public,July,Right,10,9,,,,Yes,212,100,Purchased New,No Preference,No,Mac,No,,2,,,,,Business
+19148,G - Rushton (2 p.m.),3.8,2.8,580,610,,,Female (XX),Female,67,130,8,Freshman,California,Public,March,Right,15,9,10,2,15,Yes,50,0,Rented book,No Preference,Yes,Mac,No,7,1,63,63,10,20000,UND
+19149,A - Dove (8 a.m.),3.7,3.02,,,,24,Female (XX),Female,64,128,7,Freshman,California,Public,,Right,15,0,30,14,6,No,200,100,Rented book,No Preference,Yes,Mac,Yes,27,2,50,49,12,40000,UND
+19150,H - Paradise (2 p.m.),3.98,3.6,,,,32,Female (XX),Female,64,102,6.5,Sophomore,Washington,Public,May,Right,35,10,15,2,7,Yes,280,85,Purchased New,No Preference,No,Windows(PC),No,9,2,59,58,8,50000,Business
+19151,H - Paradise (2 p.m.),4,3.75,,,,30,Male (XY),Male,70,165,10,Freshman,Colorado,Public,January,Right,5,,,,,Yes,,,,No Preference,Yes,Mac,No,,1,50,49,,,Business
+19152,A - Dove (8 a.m.),4,3.43,,,,29,Female (XX),Female,67,150,9,Junior,Colorado,Public,December,Right,8,20,25,4,8,Yes,200,25,Borrowed from a Friend,No Preference,Yes,Mac,No,14,3,49,45,10,32000,Science
+19153,I - Thatcher (10 a.m.),4,3.25,720,660,660,,Female (XX),Female,70,145,10,Freshman,California,Public,June,Left,20,9,11,9,20,Yes,200,100,Purchased Used,No Preference,No,Mac,No,7,2,55,52,5,20000,Science
+19154,C - Gibson (12 noon),3.2,3.6,,,,22,Female (XX),Female,60,120,8,Senior,Minnesota,Public,May,Right,15,18,10,10,10,Yes,100,75,Purchased Used,Kosher,No,Windows(PC),No,8,0,64,60,6,30000,Fine Arts 
+19155,E - Price (1 p.m.),3.8,3.2,,,,,Male (XY),Male,74,200,13,Freshman,Washington,Public,December,Right,17,20,20,10,25,Yes,100,0,Purchased eBook,No Preference,No,Windows(PC),No,4,2,52,52,4,30000,Business
+19156,A - Dove (8 a.m.),4,4,630,650,,,Female (XX),Female,62,130,6,Freshman,California,Public,October,Right,15,9,20,4,40,Yes,150,25,Purchased Used,No Preference,No,Mac,No,3,1,50,50,10,90000,Business
+19157,I - Thatcher (10 a.m.),4,3,700,700,,,Male (XY),Male,68,150,10,Freshman,California,Public,March,Right,22,0,7,0,0,Yes,400,0,Other,No Preference,No,Mac,Yes,4,1,60,57,2,60000,UND
+19158,A - Dove (8 a.m.),4,3.84,630,620,730,30,Female (XX),Female,67,160,8.5,Senior,Colorado,Public,March,Right,10,1,30,5,3,Yes,200,80,Purchased Used,No Preference,Yes,Windows(PC),No,24,3,51,47,15,40000,Social Science
+19159,A - Dove (8 a.m.),4,3.3,,,,24,Female (XX),Female,63,120,7.5,Freshman,Colorado,Public,March,Right,10,1,30,5,10,Yes,90,90,Purchased Used,Other,No,Windows(PC),No,10,2,66,61,15,5000,Social Science
+19160,A - Dove (8 a.m.),3.8,3.6,,,,,Female (XX),Female,66,145,8,Sophomore,Oregon,Other,January,Right,7,168,28,5,25,Yes,250,95,Borrowed from a Friend,Vegan or Vegetarian,Yes,Mac,No,8,1,53,51,11,40000,Humanities
+19161,H - Paradise (2 p.m.),3.92,3.59,,,,27,Male (XY),Male,69,170,10.5,Freshman,California,Public,July,Right,6,0,20,10,25,Yes,138,100,Purchased New,No Preference,No,Windows(PC),No,7,1,52,49,4,75000,Business
+19162,D - Rushton (12 noon),4,,,,,,Female (XX),Female,66,120,8.5,Freshman,California,Private,October,Left,20,9,20,5,14,Yes,,,Purchased Used,Vegan or Vegetarian,Yes,Windows(PC),No,2,2,,,8,,Humanities
+19163,G - Rushton (2 p.m.),3.5,3.5,,,,,Female (XX),Female,66,150,8,Freshman,California,Private,December,Right,15,0,18,3,9,Yes,200,100,Purchased Used,Other,Yes,Mac,No,13,3,50,48,13,45000,Science
+19164,D - Rushton (12 noon),4,3.84,780,680,,,Female (XX),Female,67,160,9.5,Freshman,California,Private,February,Right,10,15,25,4,20,Yes,407,95,Purchased Used,No Preference,Yes,Mac,No,6,2,70,53,10,30000,UND
+19165,B - Pickard (8 a.m.),3.5,,430,,390,,Male (XY),Male,72,260,13,Freshman,Washington,Public,January,Right,20,,35,21,19,Yes,200,55,Purchased Used,No Preference,No,Windows(PC),No,3,3,43,40,10,20000,UND
+19166,F -Hieta-aho (2 p.m.),3.2,2.9,,,,28,Female (XX),Female,63,124,7.5,Freshman,California,Public,January,Right,20,8,21,3,10,Yes,200,100,Purchased Used,No Preference,Yes,Mac,No,15,2,60,48,7,50000,UND
+19167,D - Rushton (12 noon),3.5,,,,,28,Female (XX),Female,66,150,8,Freshman,Minnesota,Public,July,Right,10,0,15,10,15,Yes,300,100,Purchased Used,No Preference,Yes,Mac,Yes,14,1,59,50,25,,Social Science
+19168,I - Thatcher (10 a.m.),3.86,,630,690,,,Female (XX),Female,64,120,7,Freshman,Washington,Public,August,Right,10,0,15,8,10,Yes,250,100,Purchased Used,No Preference,Yes,Mac,No,12,1,60,55,12,60000,Humanities
+19169,C - Gibson (12 noon),,3.2,,,,,Female (XX),Female,68,190,10,Junior,,Public,May,Left,20,20,15,6,10,Yes,240,100,Purchased Used,No Preference,Yes,Windows(PC),No,6,2,79,67,22,45000,Science
+19170,H - Paradise (2 p.m.),3.85,2.44,,,,26,Male (XY),Male,75,160,12.5,Freshman,Washington,Public,December,Right,6,,26,40,6,Yes,36,100,Purchased New,No Preference,Yes,Windows(PC),Yes,14,1,52,51,14,75000,Business
+19171,H - Paradise (2 p.m.),3.7,2.89,,,,26,Female (XX),Female,65,130,7,Freshman,Washington,Private,September,Right,15,9,10,4,15,Yes,180,100,Purchased New,Other,No,Windows(PC),No,10,3,53,50,30,50000,Business
+19172,D - Rushton (12 noon),3.4,3.6,,,,28,Female (XX),Female,65,145,9,Junior,Mississippi,Private,February,Right,20,0,28,4,14,Yes,11,0,Purchased Used,Vegan or Vegetarian,Yes,Mac,No,23,1,60,60,35,90,Science
+19173,H - Paradise (2 p.m.),,,600,600,600,32,Female (XX),Female,69,130,8,Freshman,Illinois,Public,February,Left,25,6,10,4,16,Yes,50,100,Purchased New,Vegan or Vegetarian,No,Mac,No,15,1,54,51,12,,Business
+19174,H - Paradise (2 p.m.),3.7,2.5,,,,28,Male (XY),Male,72,135,10,Freshman,Minnesota,Public,May,Right,6,8,5,3,35,Yes,327,100,Purchased New,Other,Yes,Mac,No,25,1,50,48,10,50000,Business
+19175,H - Paradise (2 p.m.),3.9,3.8,660,640,640,27,Female (XX),Female,61,100,6,Freshman,Hawaii,Private,July,Right,20,9,28,20,10,Yes,70,17,Purchased New,No Preference,No,Mac,Yes,15,1,,,10,,Business
+19176,H - Paradise (2 p.m.),3.89,3.75,600,690,690,,Female (XX),Female,66,180,8.5,Freshman,California,Public,August,Right,15,15,50,5,17,Yes,173,78,Other,Other,Yes,Mac,No,9,13,42,42,17,50000,Business
+19177,E - Price (1 p.m.),3.9,3.7,,,,,Female (XX),Female,60,115,7,Freshman,Hawaii,Private,June,Left,7,0,7,3,5,Yes,168,100,Purchased Used,No Preference,No,Mac,No,5,1,59,50,15,,Social Science
+19178,H - Paradise (2 p.m.),3.9,3.25,,,,32,Male (XY),Male,73,195,11.5,Freshman,California,Public,February,Right,20,1,20,60,4,Yes,240,100,Purchased Used,No Preference,Yes,Mac,Yes,9,0,66,60,5,60000,Business
+19179,A - Dove (8 a.m.),4,2.9,,,,,Female (XX),Female,63,135,7,Sophomore,California,Public,January,Right,15,,35,40,5,Yes,300,20,Rented book,No Preference,Yes,Mac,Yes,20,1,49,49,30,90000,Science
+19180,A - Dove (8 a.m.),3.6,,700,670,,,Female (XX),Female,65,114,7.5,Freshman,California,Public,August,Right,20,0,21,22,10,Yes,300,100,Purchased Used,No Preference,Yes,Mac,Yes,15,2,52,51,15,28000,Social Science
+19181,H - Paradise (2 p.m.),3.8,3.7,,,,,Female (XX),Female,72,168,11,Freshman,Oregon,Public,January,Left,20,0,,12,,Yes,225,100,Purchased New,No Preference,Yes,Mac,Yes,6,2,57,57,6,,Fine Arts 
+19182,B - Pickard (8 a.m.),4,3.1,,,,,Male (XY),Male,72,195,11,Freshman,California,Public,December,Right,10,0,8,8,6,Yes,250,100,Purchased Used,No Preference,No,Windows(PC),Yes,5,1,55,54,5,45000,Science
+19183,H - Paradise (2 p.m.),3.6,3.1,720,780,799,31,Female (XX),Male,69,165,95,Sophomore,Washington,Public,August,Right,7,0,25,10,8,Yes,25,100,Purchased New,No Preference,No,Windows(PC),No,20,3,59,49,7,120000,Science
+19184,G - Rushton (2 p.m.),,3.4,,,,,Female (XX),Female,63,120,7.5,Freshman,California,Public,July,Right,30,,20,10,20,No,,50,Borrowed from a Friend,No Preference,Yes,Mac,No,4,2,,,3,,UND
+19185,A - Dove (8 a.m.),4,3.67,,,,25,Female (XX),Female,64,122,7.5,Freshman,Colorado,Public,December,Right,7,0,16,14,14,Yes,139,100,Borrowed from a Friend,No Preference,No,Mac,Yes,16,2,61,61,12,,Social Science
+19186,A - Dove (8 a.m.),4,3.8,,,,31,Female (XX),Female,65,112,6.5,Freshman,Colorado,Public,June,Right,20,25,20,14,10,Yes,200,80,Rented book,Vegan or Vegetarian,No,Mac,No,12,1,53,51,12,35000,Social Science
+19187,E - Price (1 p.m.),3.8,3.17,560,,580,,Female (XX),Female,64,112,8.5,Freshman,California,Public,September,Right,25,,10,15,20,Yes,284,100,Purchased Used,Vegan or Vegetarian,No,Windows(PC),Yes,15,2,58,55,9,50000,Humanities
+19188,E - Price (1 p.m.),3,2.9,,,,26,Male (XY),Male,72,192,11.5,Junior,California,Public,April,Right,5,4,8,3,5,No,170,80,Purchased Used,No Preference,Yes,Mac,No,19,3,72,61,3,13,Science
+19189,H - Paradise (2 p.m.),3.7,2.75,,,,24,Male (XY),Male,78,215,13,Freshman,Washington,Private,August,Ambidextrous (Both),7,0,5,20,10,Yes,150,80,Other,No Preference,No,Windows(PC),Yes,7,0,57,52,20,80000,Business
+19190,I - Thatcher (10 a.m.),3.72,3.07,570,650,600,26,Male (XY),Male,71,160,10,Freshman,Washington,Public,August,Left,10,0,15,10,35,Yes,110,100,Purchased eBook,No Preference,No,Windows(PC),No,10,1,49,47,5,20000,UND
+19191,H - Paradise (2 p.m.),4,3.5,530,670,750,,Female (XX),Female,62,115,7,Freshman,California,Private,August,Right,14,4,14,13,7,Yes,175,100,Purchased Used,No Preference,Yes,Mac,Yes,6,4,48,47,6,30000,Business
+19192,H - Paradise (2 p.m.),3.9,3.56,,,,29,Male (XY),Male,70,200,11,Freshman,California,Private,July,Right,15,0,25,5,40,Yes,170,75,Purchased Used,No Preference,No,Windows(PC),No,5,1,50,48,4,60000,Business
+19193,I - Thatcher (10 a.m.),3.4,,,,,,Female (XX),Female,65,182,9,Sophomore,Washington,Public,March,Right,20,0,5,4,1,Yes,350,100,Purchased Used,Vegan or Vegetarian,No,Other,No,23,1,56,56,6,60000,Science
+19194,E - Price (1 p.m.),4,3,600,610,500,,Female (XX),Female,68,150,8.5,Sophomore,California,Private,December,Left,10,0,9,5,8,Yes,345,100,Purchased Used,Vegan or Vegetarian,No,Windows(PC),No,10,1,67,64,13,45000,Humanities
+19195,I - Thatcher (10 a.m.),3.96,,630,600,,,Female (XX),Female,67,160,9.5,Freshman,Washington,Public,July,Right,40,,,,,Yes,300,100,Purchased New,No Preference,No,Mac,No,20,1,50,50,30,,Science
+19196,E - Price (1 p.m.),4,3.5,,,,31,Male (XY),Male,76,160,12,Freshman,Colorado,Public,April,Right,8,0,15,2,19,Yes,300,80,Purchased Used,No Preference,Yes,Mac,No,16,1,55,50,4,30000,Social Science
+19197,F -Hieta-aho (2 p.m.),3.89,3.33,,,,21,Female (XX),Female,65,145,9,Freshman,Washington,Public,May,Right,10,12,,8,20,Yes,125,75,Purchased Used,Vegan or Vegetarian,Yes,Mac,Yes,24,3,56,46,18,40000,Science
+19198,B - Pickard (8 a.m.),3.6,2.1,,,,,Male (XY),Male,73,175,11.5,Freshman,Utah,Private,January,Right,10,0,18,4,3,Yes,300,100,Purchased Used,No Preference,Yes,Mac,Yes,16,2,59,54,12,,Business
+19199,B - Pickard (8 a.m.),3.4,3.5,510,640,590,,Female (XX),Female,61,115,5.5,Freshman,New York,Private,March,Right,10,10,4,3,10,Yes,150,75,Purchased Used,Vegan or Vegetarian,No,Windows(PC),No,15,1,63,54,9,20000,Humanities
+19200,B - Pickard (8 a.m.),3.97,3.97,620,630,,,Female (XX),Female,64,117,7,,Washington,Public,July,Right,9,10,21,5,1,Yes,180,100,Purchased Used,Vegan or Vegetarian,No,Windows(PC),No,15,1,65,65,5,30000,Social Science
+19201,A - Dove (8 a.m.),3.7,3.5,690,710,,,Female (XX),Female,61,160,7,Senior,California,Private,July,Right,15,23,10,1,,Yes,,40,Borrowed from a Friend,No Preference,No,Mac,No,12,2,50,49,15,30000,Humanities
+19202,A - Dove (8 a.m.),3.9,3.17,,,,27,Female (XX),Female,64,135,7,Freshman,Colorado,Public,November,Right,15,,15,4,3,Yes,25,100,Borrowed from a Friend,Other,Yes,Windows(PC),No,20,1,49,48,15,,UND
+19203,H - Paradise (2 p.m.),3.8,3.2,,,,24,Male (XY),Male,71,155,11,Freshman,Minnesota,Public,August,Right,5,9,14,1,5,Yes,350,60,Purchased New,No Preference,No,Windows(PC),No,26,0,51,47,3,,Business
+19204,H - Paradise (2 p.m.),3.97,3.5,640,630,630,,Male (XY),Male,80,150,10.5,Freshman,Washington,Public,October,Left,15,15,6,10,5,Yes,200,10,Rented book,No Preference,No,Mac,Yes,7,2,42,37,9,30000,Science
+19205,G - Rushton (2 p.m.),3.5,3.84,610,670,670,28,Male (XY),Male,65,130,9,Freshman,Hawaii,Private,September,Right,8,9,28,7,35,Yes,200,100,Purchased Used,No Preference,No,Mac,Yes,6,2,50,50,7,50000,Business
+19206,H - Paradise (2 p.m.),3.4,3.92,,,,28,Male (XY),Male,72,163,10.5,Freshman,Texas,Public,July,Right,10,0,30,10,20,Yes,300,75,Purchased Used,No Preference,Yes,Mac,No,10,2,52,51,3,80000,Business
+19207,E - Price (1 p.m.),3.8,,,,,31,Female (XX),Female,68,130,11,Freshman,California,Other,December,Right,45,,3,1,2,Yes,200,80,Purchased Used,No Preference,No,Mac,No,12,0,62,52,8,50000,Social Science
+19208,D - Rushton (12 noon),3.5,3.97,650,610,,27,Male (XY),Male,74,205,11.5,Sophomore,Washington,Private,February,Left,15,0,18,12,10,Yes,104,75,Rented book,No Preference,No,Windows(PC),Yes,10,0,66,61,4,60000,Science
+19209,A - Dove (8 a.m.),2.9,3.25,,,,25,Female (XX),Female,59,105,5.5,Sophomore,Colorado,Public,April,Right,6,10,15,4,7,Yes,250,60,Borrowed from a Friend,No Preference,Yes,Mac,No,15,1,55,54,30,80000,Social Science
+19210,G - Rushton (2 p.m.),3.7,3.5,520,590,590,,Female (XX),Female,67,145,9,,,Private,August,Right,10,0,15,6,6,No,200,25,Purchased Used,Other,No,Mac,No,20,0,69,62,15,,Social Science
+19211,A - Dove (8 a.m.),3.38,3.67,,,,24,Female (XX),Female,64,130,9,Freshman,California,Public,January,Left,12,,30,7,14,Yes,140,50,Purchased Used,No Preference,No,Mac,No,20,1,51,51,20,50000,Business
+19212,C - Gibson (12 noon),4,3.97,780,690,,,Male (XY),Male,75,170,10.5,Sophomore,Idaho,Public,May,Right,5,10,18,9,1,Yes,100,31,Rented book,No Preference,No,Windows(PC),No,18,1,59,56,10,35000,Science
+19213,A - Dove (8 a.m.),4,3.5,,,,,Male (XY),Male,72,198,12,Freshman,Colorado,Public,October,Right,8,0,15,6,15,No,150,100,Purchased Used,No Preference,No,Windows(PC),No,30,1,50,49,4,40000,Humanities
+19214,F -Hieta-aho (2 p.m.),3.85,3.44,600,600,600,,Female (XX),Female,67,140,6,Freshman,California,Other,June,Right,30,9,10,6,8,Yes,165,100,Purchased Used,No Preference,No,Mac,No,13,1,58,57,25,45000,UND
+19215,F -Hieta-aho (2 p.m.),3.2,3.75,640,710,,,Male (XY),Male,70,190,11,Freshman,California,Private,March,Right,10,0,15,5,10,Yes,200,100,Purchased Used,No Preference,Yes,Mac,No,10,0,52,,15,30000,Social Science
+19216,F -Hieta-aho (2 p.m.),3.9,3.8,650,670,690,,Male (XY),Male,72,175,11,Junior,Oregon,Public,January,Right,10,3,20,15,10,Yes,220,100,Purchased Used,No Preference,Yes,Windows(PC),Yes,10,1,58,58,6,50000,Science
+19217,F -Hieta-aho (2 p.m.),3.5,2.75,690,560,,,Male (XY),Male,70,162,8.5,Freshman,Washington,Public,September,Right,15,0,35,5,50,Yes,154,30,Purchased New,No Preference,No,Windows(PC),No,31,1,52,51,30,54000,Business
+19218,G - Rushton (2 p.m.),3.7,3.78,680,740,780,,Female (XX),Female,67,135,7.5,Freshman,California,Private,December,Right,10,9,18,10,17,Yes,165,75,Borrowed from a Friend,Vegan or Vegetarian,Yes,Mac,No,8,3,66,58,10,35000,Social Science
+19219,F -Hieta-aho (2 p.m.),4,3.75,730,670,670,29,Female (XX),Female,63,145,6,Freshman,California,Public,December,Right,15,,12,10,5,Yes,300,100,Purchased Used,No Preference,No,Mac,Yes,11,1,54,52,45,75000,Social Science
+19220,D - Rushton (12 noon),3.75,3.6,,,,,Female (XX),Female,64,140,7,Sophomore,Washington,Public,December,Right,15,9,16,4,5,Yes,110,30,Borrowed from a Friend,No Preference,Yes,Windows(PC),No,4,2,39,37,14,80000,Science
+19221,E - Price (1 p.m.),4,3.09,660,620,620,27,Female (XX),Female,62,117,7,,Hawaii,Public,March,Right,10,0,15,15,7,Yes,167,60,Purchased Used,No Preference,No,Mac,Yes,16,1,48,45,7,,Social Science
+19222,F -Hieta-aho (2 p.m.),3.8,3.45,,,,,Female (XX),Female,68,145,10,Freshman,Washington,Private,August,Right,25,0,10,12,20,Yes,140,10,Rented book,No Preference,No,Mac,Yes,7,1,78,50,8,60000,Business
+19223,C - Gibson (12 noon),3.6,3.3,700,700,650,30,Female (XX),Female,64,120,7.5,Junior,Massachusetts,Private,February,Right,10,0,18,11,17,No,200,60,Rented book,No Preference,Yes,Mac,No,15,2,58,58,15,30000,Science
+19224,C - Gibson (12 noon),3.86,3.35,,,,30,Female (XX),Female,66,140,9.5,Junior,Washington,Public,May,Right,10,10,20,18,0,Yes,300,0,Borrowed from a Friend,No Preference,Yes,Windows(PC),Yes,20,2,51,50,16,,Science
+19225,B - Pickard (8 a.m.),3.7,2.4,,,,27,Female (XX),Do not identify as male or female/gender nonconforming,64,135,8,Sophomore,California,Public,February,Left,7,0,16,5,20,Yes,200,20,Borrowed from a Friend,Vegan or Vegetarian,Yes,Mac,No,6,0,56,55,8,20000,Social Science
+19226,A - Dove (8 a.m.),3.85,3.58,740,770,,,Female (XX),Female,63,102,5,Freshman,Colorado,Public,October,Right,15,9,15,1,20,Yes,50,50,Rented book,No Preference,No,Mac,No,36,1,58,56,7,30000,UND
+19227,D - Rushton (12 noon),3.2,2.8,,,,22,Female (XX),Female,62,120,6.5,Sophomore,New Mexico,Private,May,Right,15,10,10,20,30,Yes,450,90,Purchased Used,No Preference,Yes,Windows(PC),No,8,0,55,53,20,50000,Social Science
+19228,E - Price (1 p.m.),3.7,3.3,,,,,Female (XX),Female,71,175,11,,California,Public,August,Right,,,,,,Yes,,,,No Preference,No,Windows(PC),Yes,,2,53,53,,,Social Science
+19229,B - Pickard (8 a.m.),3.4,1.8,,,,23,Male (XY),Male,73,175,12.5,Freshman,Texas,Private,February,Right,20,0,7,4,12,Yes,95,100,Purchased Used,Vegan or Vegetarian,No,Mac,No,15,0,93,58,5,20000,Fine Arts 
+19230,I - Thatcher (10 a.m.),3.3,,700,650,700,23,Female (XX),Female,62,125,7,Freshman,Colorado,Public,September,Ambidextrous (Both),10,10,15,7,8,Yes,200,100,Purchased Used,No Preference,Yes,Windows(PC),Yes,31,5,84,44,15,50000,Fine Arts 
+19231,H - Paradise (2 p.m.),3.8,4,,,,33,Male (XY),Male,,165,12,Freshman,,Private,March,Right,,,,,,Yes,85,100,Purchased New,No Preference,No,Mac,Yes,13,2,55,54,15,500000,Business
+19232,D - Rushton (12 noon),3.9,,,,,29,Female (XX),Female,64,175,7.5,Freshman,Wisconsin,Public,August,Right,20,,35,,10,Yes,400,100,Purchased Used,Vegan or Vegetarian,Yes,Windows(PC),No,25,2,47,45,5,30000,Fine Arts 
+19233,F -Hieta-aho (2 p.m.),3.3,3.3,570,590,,,Female (XX),Female,72,130,10,Freshman,California,Public,July,Right,15,25,8,1,4,Yes,620,100,Purchased Used,No Preference,Yes,Mac,No,7,1,50,47,17,70000,Business
+19234,C - Gibson (12 noon),3.9,3.9,,,,31,Female (XX),Female,64,,7.5,Freshman,Washington,Private,December,Right,20,0,22,2,20,No,165,75,Rented book,Other,No,Mac,No,21,2,55,52,20,,UND
+19235,C - Gibson (12 noon),4,3.75,740,760,710,32,Female (XX),Female,63,110,7.5,Freshman,California,Public,February,Right,15,0,30,7,30,Yes,180,100,Purchased Used,No Preference,No,Mac,No,13,1,56,56,20,30000,UND
+19236,B - Pickard (8 a.m.),3.5,3.75,,,,26,Male (XY),Male,72,147,10,Freshman,California,Public,July,Right,10,0,12,4,2,No,425,100,Purchased Used,No Preference,No,Windows(PC),No,7,1,50,46,7,25000,Humanities
+19237,H - Paradise (2 p.m.),3.6,3.42,770,,770,30,Male (XY),Male,69,185,11.5,Freshman,Washington,Public,June,Right,12,10,14,15,6,Yes,114,70,Purchased Used,No Preference,No,Windows(PC),Yes,9,1,58,48,8,110000,Business
+19238,B - Pickard (8 a.m.),3.5,2.3,,,,,Male (XY),Male,70,155,12,Sophomore,Washington,Public,July,Left,20,20,20,20,5,Yes,400,10,Purchased eBook,Other,Yes,Windows(PC),No,7,1,46,46,15,68000,Science
+19239,H - Paradise (2 p.m.),3.7,2.3,,,,19,Female (XX),Female,67,145,10,Freshman,Nevada,Public,May,Right,15,0,25,6,42,Yes,200,50,Purchased New,No Preference,No,Mac,Yes,11,1,50,45,20,,Science
+19240,E - Price (1 p.m.),3.4,3.3,,,,27,Female (XX),Female,66,150,8,Freshman,California,Private,February,Right,20,10,9,0,12,Yes,102,80,Purchased Used,No Preference,Yes,Mac,No,10,3,68,55,12,40000,Social Science
+19241,A - Dove (8 a.m.),3.3,2.7,,,,22,Male (XY),Male,73,190,12.5,Freshman,California,Public,May,Right,7,0,5,25,15,Yes,50,75,Borrowed from a Friend,No Preference,No,Mac,Yes,18,1,53,52,7,50000,UND
+19242,H - Paradise (2 p.m.),4,3.75,670,740,740,27,Male (XY),Male,76,215,12.5,,Colorado,Public,October,Left,7,,16,12,7,Yes,215,100,Purchased Used,Vegan or Vegetarian,No,Mac,Yes,8,1,57,57,6,70000,Social Science
+19243,F -Hieta-aho (2 p.m.),,,550,640,,,Male (XY),Male,68,110,8,Freshman,California,Public,November,Right,20,0,3,3,6,Yes,190,100,Purchased Used,No Preference,No,Windows(PC),No,13,3,55,52,2,50000,UND
+19244,B - Pickard (8 a.m.),4,3.67,,,,26,Female (XX),Female,68,135,8.5,Freshman,California,Public,January,Right,5,0,25,7,10,Yes,200,100,Purchased Used,Vegan or Vegetarian,Yes,Mac,Yes,15,1,53,53,7,,Social Science
+19245,I - Thatcher (10 a.m.),3.9,,,,,,Female (XX),Female,64,,8,Junior,Washington,Public,February,Right,6,15,8,6,16,Yes,330,40,Purchased Used,No Preference,Yes,Windows(PC),No,14,0,58,56,6,45000,Science
+19246,C - Gibson (12 noon),4,3.9,,,,26,Female (XX),Female,62,157,7.5,Freshman,New Mexico,Other,May,Right,20,9,25,5,7,Yes,100,60,Rented book,Other,No,Windows(PC),No,16,2,51,49,30,250000,Science
+19247,F -Hieta-aho (2 p.m.),3.8,2.6,640,,580,,Male (XY),Male,70,205,10.5,Freshman,Washington,Public,January,Right,18,0,15,10,20,Yes,190,100,Purchased Used,No Preference,No,Windows(PC),Yes,7,4,38,36,8,40000,Science
+19248,H - Paradise (2 p.m.),3.7,2.25,,,,,Male (XY),Male,76,165,12,Freshman,Oregon,Public,August,Right,5,0,25,15,30,Yes,50,100,Purchased New,No Preference,No,Mac,Yes,20,1,57,55,24,80000,Business
+19249,G - Rushton (2 p.m.),3.81,3,620,,620,28,Male (XY),Male,72,210,12.5,Freshman,California,Public,May,Right,7,0,5,12,2,Yes,275,100,Purchased Used,No Preference,No,Mac,Yes,21,0,51,50,3,70000,Social Science
+19250,G - Rushton (2 p.m.),3.4,3.09,520,600,600,,Female (XX),Female,66,150,9,Freshman,Arizona,Public,April,Right,15,0,9,5,5,Yes,80,100,Purchased Used,No Preference,Yes,Mac,Yes,15,1,57,53,15,70000,Social Science
+19251,G - Rushton (2 p.m.),3.1,3,400,500,400,,Female (XX),Female,62,115,7,Freshman,Hawaii,Private,May,Right,20,,15,6,20,No,300,100,Borrowed from a Friend,No Preference,Yes,Mac,No,20,1,62,61,15,,UND
+19252,C - Gibson (12 noon),3.7,3.1,,,,,Female (XX),Female,64,103,8,Junior,Washington,Public,May,Right,45,23,21,0,12,Yes,274,10,Other,No Preference,No,Windows(PC),No,13,2,26,53,31,55246,Fine Arts 
+19253,F -Hieta-aho (2 p.m.),3.5,,600,740,,,Male (XY),Male,74,150,12.5,Freshman,Washington,Public,May,Right,15,9,9,9,9,Yes,33,100,Borrowed from a Friend,No Preference,No,Mac,Yes,14,1,53,50,5,120000,UND
+19254,H - Paradise (2 p.m.),4,4,660,710,,,Male (XY),Male,70,150,10,Freshman,Washington,Public,January,Right,15,,10,10,8,Yes,80,75,Other,No Preference,No,Mac,Yes,15,1,47,46,18,60000,Business
+19255,B - Pickard (8 a.m.),3.79,3.17,,,,30,Male (XY),Male,68,135,9,Freshman,Washington,Public,March,Right,5,7,15,10,7,Yes,430,100,Purchased Used,No Preference,No,Windows(PC),No,11,2,45,44,5,60000,Science
+19256,B - Pickard (8 a.m.),3.5,3.25,,,,,Male (XY),Male,72,150,10.5,Freshman,California,Public,June,Right,20,0,12,24,4,Yes,130,100,Purchased Used,No Preference,No,Mac,Yes,16,1,50,48,10,60000,Business
+19257,B - Pickard (8 a.m.),3.2,3,,,,21,Male (XY),Male,68,190,11,Freshman,Washington,Public,May,Right,15,,20,24,,Yes,200,90,Purchased Used,No Preference,No,Mac,Yes,10,4,61,47,15,60000,Business
+19258,D - Rushton (12 noon),3.8,3.08,750,730,,34,Female (XX),Female,52,120,6,Freshman,Illinois,Public,November,Right,20,9,10,0,28,Yes,288,100,Purchased Used,No Preference,No,Mac,No,31,4,52,43,10,50000,UND
+19259,E - Price (1 p.m.),2.7,1.9,600,550,550,,Male (XY),Male,73,205,13,Sophomore,California,Public,March,Right,20,0,20,30,10,Yes,350,3,Purchased Used,No Preference,No,Mac,Yes,10,1,63,60,15,60000,Social Science
+19260,F -Hieta-aho (2 p.m.),3.2,3.6,510,700,,,Female (XX),Female,62,110,6,Freshman,Colorado,Public,December,Right,15,0,30,10,25,Yes,200,100,Borrowed from a Friend,No Preference,Yes,Mac,No,10,1,49,49,15,50000,Social Science
+19261,F -Hieta-aho (2 p.m.),3.8,3.75,,,,28,Female (XX),Female,51,118,6,Freshman,California,Public,November,Right,15,0,10,10,10,Yes,300,100,Purchased Used,No Preference,No,Mac,Yes,5,3,80,60,20,25000,UND
+19262,F -Hieta-aho (2 p.m.),3.7,3.55,560,,540,,Male (XY),Male,70,195,11.5,Freshman,California,Private,December,Ambidextrous (Both),20,0,35,42,63,Yes,200,25,Borrowed from a Friend,No Preference,No,Mac,Yes,13,0,56,52,25,50000,Business
+19263,E - Price (1 p.m.),3.8,,,,,26,Female (XX),Female,63,130,8,Freshman,Louisiana,Other,February,Right,15,0,45,6,20,Yes,400,100,Purchased Used,No Preference,Yes,Windows(PC),No,7,2,43,42,12,20000,Social Science
+19264,A - Dove (8 a.m.),3.7,2.8,,,,,Female (XX),Female,63,125,7.5,Freshman,Washington,Public,December,Right,25,9,15,3,10,Yes,235,100,Purchased Used,No Preference,Yes,Windows(PC),No,6,4,42,37,12,50000,Science
+19265,G - Rushton (2 p.m.),3.7,2.9,720,600,580,26,Male (XY),Male,66,115,7.5,Freshman,Hawaii,Public,August,Right,15,30,5,0,6,Yes,200,100,Purchased Used,No Preference,No,Mac,No,5,1,47,44,3,75000,Fine Arts 
+19266,F -Hieta-aho (2 p.m.),3.4,,500,300,300,,Female (XX),Female,63,145,8,Freshman,Georgia,Private,December,Right,20,0,10,8,4,Yes,130,100,Borrowed from a Friend,No Preference,Yes,Mac,Yes,28,1,51,50,10,30000,Humanities
+19267,D - Rushton (12 noon),3.96,2.75,,,,,Male (XY),Male,70,193,11.5,Sophomore,California,Public,July,Right,11,11,7,10,5,Yes,400,50,Borrowed from a Friend,No Preference,Yes,Mac,Yes,5,3,56,53,1,50000,Humanities
+19268,F -Hieta-aho (2 p.m.),3,2.77,,,,,Female (XX),Female,65,135,9,Freshman,California,Public,January,Right,10,,5,0,30,Yes,340,100,Purchased Used,Vegan or Vegetarian,Yes,Mac,No,18,1,57,55,8,40000,Humanities
+19269,F -Hieta-aho (2 p.m.),3.1,2.45,,,,,Male (XY),Male,67,130,8,Freshman,Washington,Public,July,Right,30,8,8,5,,Yes,,,Other,No Preference,No,Mac,No,8,5,53,53,5,,UND
+19270,F -Hieta-aho (2 p.m.),3.56,3.69,500,680,700,,Female (XX),Female,65,150,7,Freshman,Illinois,Private,May,Right,17,10,30,10,50,Yes,500,50,Purchased Used,No Preference,No,Mac,No,41,2,63,58,11,,UND
+19271,E - Price (1 p.m.),,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+19272,G - Rushton (2 p.m.),3.4,2.75,570,590,590,,Male (XY),Male,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+19273,G - Rushton (2 p.m.),4,3.5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+19274,E - Price (1 p.m.),3,,,,,35,Female (XX),Female,63,104,8,Freshman,Colorado,Private,December,Right,10,,,,,,,,,,,,,,,,,,,
+19275,C - Gibson (12 noon),3,2.27,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+19276,I - Thatcher (10 a.m.),3.5,3.33,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
