@@ -1,3 +1,10 @@
+#' Update Code to Latest Version
+#'
+#' This function updates your library to the newest version and sets those to become available. Check if this appears!
+#' @export
+#' @examples
+#' > update_code()
+
 update_code <- function(){
   library(devtools)
   install_github("kalamadude/Math160UPS")
