@@ -6,7 +6,8 @@
 #' > update_code()
 
 update_code <- function(){
+  remove.packages("Math160UPS")
   library(devtools)
   install_github("kalamadude/Math160UPS")
-  library(Math160UPS)
+  library("Math160UPS")
 }
