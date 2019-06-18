@@ -229,6 +229,7 @@ t_test <- function(){
         s1 = as.numeric(readline("What is the sample standard deviation of the first set of measurements? "))
         s2 = as.numeric(readline("What is the sample standard deviation of the second set of measurements? "))
         n = as.numeric(readline("What is the sample size? "))
+        df = n-1
         xbar = xbar2-xbar1
         s = sqrt(s1^2+s2^2)
         cat("The statistics for the difference are: ")
@@ -304,15 +305,16 @@ t_test <- function(){
       while(conf_level<0 | conf_level>1){cat('Please choose a confidence level between 0 and 1')
         conf_level = as.numeric(readline("What is your desired confidence level? "))
       }
-      sidedness = readline("Are you checking whether the mean of the second population is less, greater, or different than the mean of the first population? Possible answers are 'less', 'greater', and 'different'. ")
+      sidedness = readline("Are you checking whether the mean of the second population is less, greater, or different than the mean of the first population? Possible answers are 'less', 'greater', 'different', and 'NA'. ")
+      
       if(sidedness=="different"){
         sidedness = "both"
       }
       
-      
+      if(sidedness!="NA"){
       t = xbar/(s/sqrt(n))
       df = n-1
-      out = conduct_t_test(t,df,sidedness)
+      out = conduct_t_test(t,df,sidedness)}
       
       # new version with only one-sided confidence intervals:
       tstar = -qt((1-conf_level)/2,df)
@@ -326,7 +328,7 @@ t_test <- function(){
       
       
       
-      
+      if(sidedness!="NA"){
       if(sidedness == "both"){
         
         # tstar = -qt((1-conf_level)/2,df)
@@ -386,7 +388,7 @@ t_test <- function(){
       cat(out$p_value_type)
       cat("\n")
       cat("\n")
-      cat("\n")
+      cat("\n")}
       cat(paste("The ",toString(conf_level*100),"% confidence interval for the difference in population means is",sep=""))
       cat("\n")
       cat(paste(format(lower,scientific=FALSE)," < mu2 - mu1 < ",format(upper,scientific=FALSE)))
@@ -507,14 +509,14 @@ t_test <- function(){
         conf_level = as.numeric(readline("What is your desired confidence level? "))
       }
       
-      sidedness = readline("Are you checking whether the mean of the second population is less, greater, or different than the mean of the first population? Possible answers are 'less', 'greater', and 'different'. ")
+      sidedness = readline("Are you checking whether the mean of the second population is less, greater, or different than the mean of the first population? Possible answers are 'less', 'greater', 'different', and 'NA'. ")
       if(sidedness=="different"){
         sidedness = "both"
       }
       
-      
+      if(sidedness!="NA"){
       t = xbar/s
-      out = conduct_t_test(t,df,sidedness)
+      out = conduct_t_test(t,df,sidedness)}
       
       # new version with no one-sided confidence intervals:
       tstar = -qt((1-conf_level)/2,df)
@@ -526,7 +528,7 @@ t_test <- function(){
       lower = xbar - tstar*s
       upper = xbar + tstar*s
       
-      
+      if(sidedness!="NA"){
       if(sidedness == "both"){
         
         # tstar = -qt((1-conf_level)/2,df)
@@ -586,7 +588,7 @@ t_test <- function(){
       cat(out$p_value_type)
       cat("\n")
       cat("\n")
-      cat("\n")
+      cat("\n")}
       cat(paste("The ",toString(conf_level*100),"% confidence interval for the difference in population means is",sep=""))
       cat("\n")
       cat(paste(format(lower,scientific=FALSE)," < mu2 - mu1 < ",format(upper,scientific=FALSE)))
@@ -626,6 +628,7 @@ t_test <- function(){
       xbar = as.numeric(readline("What is your sample mean? "))
       s = as.numeric(readline("What is your sample standard deviation? "))
       n = as.numeric(readline("What is your sample size? "))
+      df = n-1
     }
     
     if(vec=="whole"){
@@ -655,20 +658,22 @@ t_test <- function(){
       cat("\n")
     }
     
-    mu_0 = as.numeric(readline("What is the theoretical mean you are testing against (called mu_0)? "))
+    mu_0 = readline("What is the theoretical mean you are testing against (called mu_0)? ")
+    if(mu_0!="NA"){mu_0 = as.numeric(mu_0)}
     conf_level = as.numeric(readline("What is your desired confidence level? "))
     while(conf_level<0 | conf_level>1){cat('Please choose a confidence level between 0 and 1')
       conf_level = as.numeric(readline("What is your desired confidence level? "))
     }
-    sidedness = readline("Are you doing a one-sided or two-sided test? Possible answers are 'less', 'greater', and 'two-sided'. ")
+    if(mu_0!="NA"){
+    sidedness = readline("Are you doing a one-sided or two-sided test? Possible answers are 'less', 'greater', 'two-sided', and 'NA'. ")
     if(sidedness=="two-sided"){
       sidedness = "both"
-    }
+    }}
     
-    
+    if(mu_0!="NA"){
     t = (xbar - mu_0)/(s/sqrt(n))
     df = n-1
-    out = conduct_t_test(t,df,sidedness)
+    out = conduct_t_test(t,df,sidedness)}
     
     # new version with no one-sided confidence intervals
     tstar = -qt((1-conf_level)/2,df)
@@ -718,7 +723,7 @@ t_test <- function(){
     # }
     
     
-    
+    if(mu_0!="NA"){
     cat("Your t-statistic is:")
     cat("\n")
     cat(paste("t  = (",format(xbar,scientific=FALSE),"-",format(mu_0,scientific=FALSE),")/(",format(s,scientific=FALSE),"/sqrt(",format(n,scientific=FALSE),")) = ",format(t,scientific=FALSE),sep=""))
@@ -734,7 +739,7 @@ t_test <- function(){
     cat(out$p_value_type)
     cat("\n")
     cat("\n")
-    cat("\n")
+    cat("\n")}
     cat(paste("The ",toString(conf_level*100),"% confidence interval for the population mean is",sep=""))
     cat("\n")
     cat(paste(format(lower,scientific=FALSE)," < mu < ",format(upper,scientific=FALSE)))

@@ -62,13 +62,16 @@
 z_test <- function(){
   sigma = as.numeric(readline("What is the *population* standard deviation? "))
   xbar = as.numeric(readline("What is your sample mean? "))
-  mu_0 = as.numeric(readline("What is the theoretical mean you are testing against (called mu_0)? "))
+  mu_0 = readline("What is the theoretical mean you are testing against (called mu_0)? ")
+  if(mu_0!="NA"){mu_0 = as.numeric(mu_0)}
   n = as.numeric(readline("What is your sample size? "))
   conf_level = as.numeric(readline("What is your desired confidence level? "))
   while(conf_level<0 | conf_level>1){cat('Please choose a confidence level between 0 and 1')
     conf_level = as.numeric(readline("What is your desired confidence level? "))
   }
+  if(mu_0!="NA"){
   sidedness = readline("Are you doing a one-sided or two-sided test? Possible answers are 'less', 'greater', and 'two-sided'. ")
+  }
   
   s = sigma/sqrt(n)
   
@@ -82,7 +85,7 @@ z_test <- function(){
   lower = xbar - zstar*s
   upper = xbar + zstar*s
   
-  
+  if(mu_0!="NA"){
   z = (xbar-mu_0)/s
   if(z<=0){
     thing_to_type1 = paste("2*pnorm(",toString(xbar),",",toString(mu_0),",",toString(sigma),"/sqrt(",toString(n),"))",sep="")
@@ -148,11 +151,7 @@ z_test <- function(){
     thing_to_type1 = paste("1-pnorm(",toString(xbar),",",toString(mu_0),",",toString(sigma),"/sqrt(",toString(n),"))",sep="")
     
   }
-  
-  
-  
-  
-  
+
   cat(paste("The probability of getting this result or more extreme for xbar if mu really is ",toString(mu_0)," is",sep=""))
   cat("\n")
   cat(paste("p = ",format(out$prob,scientific=FALSE)))
@@ -163,7 +162,7 @@ z_test <- function(){
   cat(thing_to_type1)
   cat("\n")
   cat("\n")
-  cat("\n")
+  cat("\n")}
   cat(paste("The ",toString(conf_level*100),"% confidence interval for the population mean is",sep=""))
   cat("\n")
   cat(paste(format(lower,scientific=FALSE)," < mu < ",format(upper,scientific=FALSE)))
