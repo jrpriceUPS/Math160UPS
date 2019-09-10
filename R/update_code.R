@@ -7,7 +7,11 @@
 
 update_code <- function(){
   library(devtools)
-  install_github("kalamadude/Math160UPS")
+  install_github("jrpriceUPS/Math160UPS")
   .rs.restartR()
   library("Math160UPS")
+  cat("\n\n\n\n\n")
+  cat("*******************************\n")
+  cat("* Your update was successful! *\n")
+  cat("*******************************")
 }
