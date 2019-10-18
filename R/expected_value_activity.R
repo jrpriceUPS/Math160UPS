@@ -1,6 +1,7 @@
 #' Flip a coin three times for every student
 #'
 #' Gives everyone in class a number of heads flipped out of three (in case they don't have coins for the expected value activity).
+#' @export
 expected_value_activity <- function(){
   
   data(section)
