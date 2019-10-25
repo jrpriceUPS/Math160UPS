@@ -10,7 +10,7 @@ expected_value_activity <- function(){
   for (i  in 1:length(section)){
     
     if (num_heads[i]==1){
-    cat(paste(section[i],": You flipped ",toString(num_heads[i])," head.\n",sep=""))
+      cat(paste(section[i],": You flipped ",toString(num_heads[i])," head.\n",sep=""))
     } else{
       cat(paste(section[i],": You flipped ",toString(num_heads[i])," heads.\n",sep=""))
     }
