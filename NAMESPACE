@@ -3,6 +3,7 @@
 export(binom)
 export(chi_test)
 export(conduct_t_test)
+export(confint_activity)
 export(expected_value_activity)
 export(find_residuals)
 export(linreg)
