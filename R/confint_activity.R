@@ -2,7 +2,7 @@
 #'
 #' Allows students to calculate their own sample mean and use it to make a confidence interval.
 #' @export
-confint_activity <- function(n = 3,numstudents = "N",conf = .95){
+confint_activity <- function(n = 9,numstudents = "N",conf = .95){
   
   if (numstudents == "N"){
     data(section)
