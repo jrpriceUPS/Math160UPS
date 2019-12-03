@@ -70,7 +70,7 @@ find_residuals <- function(){
     
   cat(paste("and then typing:"))
   cat("\n")
-  cat(paste("resid(model))"))
+  cat(paste("resid(model)"))
   cat("\n")
   cat("\n")
   cat(paste("To plot them, type:\n"))
