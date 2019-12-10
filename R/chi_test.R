@@ -232,7 +232,7 @@ chi_test <- function(){
   
   # make a plot
   
-  rightend = qchisq(.99,df)
+  rightend = qchisq(.99,out$parameter)
   
   if(out$statistic>rightend){
     rightend = 1.1*out$statistic
