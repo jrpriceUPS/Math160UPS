@@ -232,10 +232,9 @@ chi_test <- function(){
   
   # make a plot
   
-  if(out$statistic <= 20){
-    rightend = 1.5*out$statistic
-  }
-  if(out$statistic>20){
+  rightend = qchisq(.99,df)
+  
+  if(out$statistic>rightend){
     rightend = 1.1*out$statistic
   }
   df = out$parameter
