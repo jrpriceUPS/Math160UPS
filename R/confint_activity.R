@@ -2,11 +2,11 @@
 #'
 #' Allows students to calculate their own sample mean and use it to make a confidence interval.
 #' @export
-confint_activity <- function(n = 9,numstudents = "N",conf = .95){
+confint_activity <- function(n = 9,numstudents = "N",conf = .95,section_name = "section"){
   
   if (numstudents == "N"){
-    data(section)
-    data(students)
+    section = get(section_name)
+    students = get("students")
     heights = students$Height[!is.na(students$Height)]
     
     cat(paste("The actual standard deviation is ",toString(round(sd(heights),2))," inches.\n\n",sep=""))
