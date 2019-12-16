@@ -2,12 +2,12 @@
 #'
 #' Allows students to calculate their own sample mean and use it to do a significance test.
 #' @export
-hyp_test_activity <- function(n = 9,numstudents = "N"){
+hyp_test_activity <- function(n = 9,numstudents = "N",section_name = section){
   sigma = 2.94
   mu0 = 69.17
   
   if (numstudents == "N"){
-    data(section)
+    section = data(section_name)
     data(students)
     heights = students$Height[!is.na(students$Height)]
     

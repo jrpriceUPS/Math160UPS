@@ -39,6 +39,7 @@ find_residuals <- function(){
     y = frame[[names[[1]][2]]]
   } else{
     y = get(varname2)}
+
   
   xnew = x[!is.na(x)&!is.na(y)]
   ynew = y[!is.na(x)&!is.na(y)]
