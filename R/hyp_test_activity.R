@@ -6,8 +6,6 @@ hyp_test_activity <- function(n = 9,numstudents = "N",section_name = "section"){
   sigma = 2.94
   mu0 = 69.17
   
-  cat(section_name)
-  
   if (numstudents == "N"){
     section = get(section_name)
     students = get("students")
