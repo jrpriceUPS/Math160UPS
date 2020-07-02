@@ -1,4 +1,4 @@
-unfairDie <- function(rolls){
+unfairDie <- function(rolls = 1){
   p = c(1,3,2,5,2,4,1)
   p = p/sum(p)
   p = cumsum(p)

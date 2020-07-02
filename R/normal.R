@@ -78,13 +78,32 @@
 normal <- function(){
   
   prob = readline("Are you calculating a proportion or a value? Possible answers are 'proportion' or 'value'. ")
+  while(prob != "proportion" &
+        prob != "p" &
+        prob != "Proportion" &
+        prob != "P" &
+        prob != "prop" &
+        prob != "Prop" &
+        prob != "value" &
+        prob != "Value" &
+        prob != "v" &
+        prob != "V"
+        ){cat('Please choose either proportion or value')
+    prob = readline("Are you calculating a proportion or a value? Possible answers are 'proportion' or 'value'. ")
+  }
   
-  if(prob=="proportion"){
+  if(prob=="proportion" | prob=="p" | prob=="P" | prob=="Proportion" | prob=="prop" | prob=="Prop"){
     
     version = readline("Do you have one value or two values? Possible answers are 'one' and 'two'. ")
+    while(version != "one" &
+          version != "1" &
+          version != "two" &
+          version != "2"
+    ){cat('Please choose either one or two')
+      version = readline("Do you have one value or two values? Possible answers are 'one' and 'two'. ")
+    }
   
-  
-    if(version == "one"){
+    if(version == "one" | version == "1"){
   x = as.numeric(readline("What is the value you are concerned with? "))
   mu = as.numeric(readline("What is the mean of your distribution? "))
   sigma = as.numeric(readline("What is the standard deviation of your distribution? "))
@@ -93,7 +112,7 @@ normal <- function(){
   normal_p(x,mu,sigma,type)
     }
   
-  if(version == "two"){
+  if(version == "two" | version == "2"){
     x = as.numeric(readline("What is the left value? "))
     y = as.numeric(readline("What is the right value? "))
     mu = as.numeric(readline("What is the mean of your distribution? "))
@@ -104,7 +123,7 @@ normal <- function(){
     
   }
   
-  if(prob=="value"){
+  if(prob=="value" | prob =="v" | prob=="V" | prob == "Value"){
     q = as.numeric(readline("What is the proportion you are interested in? "))
     while(q<0 | q>1){cat('Please choose a proportion between 0 and 1')
       q = as.numeric(readline("What is the proportion you are interested in? "))

@@ -53,7 +53,7 @@
 binom <- function(){
   n = as.numeric(readline("How many trials are there in your binomial experiment? "))
   while(n!=round(n) | n<1){cat('Please choose a whole number greater than zero')
-    n = as.numeric(readline("What is the chance of success on one trial of your binomial experiment? "))
+    n = as.numeric(readline("How many trials are there in your binomial experiment? "))
   }
   
   p = as.numeric(readline("What is the chance of success on one trial of your binomial experiment? "))
@@ -84,7 +84,7 @@ binom <- function(){
     result = paste("The probability of getting more than ",toString(x)," successes in ",toString(n)," trials with probability of success ",toString(p)," each time is ",toString(ans),".",sep="")
     thing_to_type= paste("1-pbinom(",toString(x),",",toString(n),",",toString(p),")",sep="")
     
-    cols[(x+2):n] = rep("skyblue",n-x-1)
+    cols[(x+2):n+1] = rep("skyblue",n-x-1)
   }
   
   if(type == "exactly"){
