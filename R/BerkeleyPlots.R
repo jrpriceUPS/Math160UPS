@@ -1,4 +1,4 @@
-
+BerkeleyPlots = function(){
 
 library("Math160UPS")
 data(UCBerkeley)
@@ -23,4 +23,4 @@ barplot(prop.table(table(ProgramA$Accepted,ProgramA$Gender),2), legend.text = TR
 mosaicplot(t(table1), main = "Number of Students Admitted by Gender")
 barplot(prop.table(table1,2), legend.text = TRUE, main = "Proportion of Applicants Accepted by Gender")
 barplot(table1,beside = TRUE, legend.text = TRUE, main = "Number Admitted to Graduate Programs by Gender")
-
+}
