@@ -2,28 +2,24 @@
 #'
 #' Allows students to calculate their own sample mean and use it to do a significance test.
 #' @export
-hyp_test_activity <- function(n = 9,numstudents = "N",section_name = "section"){
+hyp_test_activity <- function(n = 20,numstudents = "N",conf = .95,section_name = "section"){
   sigma = 2.94
   mu0 = 69.17
   
   if (numstudents == "N"){
     section = get(section_name)
     students = get("students")
-    heights = students$Height[!is.na(students$Height)]
+    coffee = droplevels(subset(students,Coffee == c("Yes","No"))$Coffee)
     
     
     
     for (i  in 1:length(section)){
       
-      current = sample(heights,n)
-      cat(paste(section[i],": ",toString(current),"\n",sep=""))
+      current = table(sample(coffee,n))
+      cat(paste(section[i],": ",toString(current[1])," No, ",toString(current[2])," Yes\n",sep=""))
       
       
     }
-    
-    cat(paste("\nThe national standard deviation is ",toString(sigma)," inches.\n",sep=""))
-    cat(paste("The national average height is ",toString(mu0)," inches.\n",sep=""))
-    cat(paste("Each sample has ",toString(n)," observations.\n\n",sep=""))
     
     
   }
@@ -31,21 +27,21 @@ hyp_test_activity <- function(n = 9,numstudents = "N",section_name = "section"){
   if(numstudents != "N"){
     
     data(students)
-    heights = students$Height[!is.na(students$Height)]
-    sigma = sd(heights)
-    mu = mean(heights)
+    coffee = droplevels(subset(students,Coffee == c("Yes","No"))$Coffee)
+    coffee = factor(coffee,c("Yes","No"))
+    
+    myPropTable = prop.table(table(coffee))
+    trueP = myPropTable[2]
+    
     list = rep(0,numstudents)
-    prob = rep(0,numstudents)
     for (i  in 1:numstudents){
       
-      current = sample(heights,n)
-      list[i] = mean(current)
-      prob[i] = 2*pnorm(list[i],mu0,sigma/sqrt(n))
-      sum(prob<0.05)/2800
+      current = binom.test(table(sample(coffee,n)))
+      list[i] = current$p.value
       
     }
     
-    percent = sum(prob<0.05)/numstudents
+    percent = sum(list<0.05)/numstudents
     
     cat(paste(toString(round(percent*100,2)),"% of students found their result had a probability of below 0.05 under the null hypothesis.\n",sep=""))
     

@@ -87,11 +87,14 @@
 #'   chisq.test(data,p = prob)
 
 chi_test <- function(){
-  compare = readline("Are you comparing two distributions or checking goodness of fit? Possible answers are 'comparing' and 'goodness'. ")
+  cat("Are you comparing two distributions or checking goodness of fit?\nPossible answers are 'comparing' and 'goodness'.\n")
+  compare = readline()
   
   if(compare=="comparing"){
-    m = as.numeric(readline("How many rows are there in your table? "))
-    n = as.numeric(readline("How many columns are there in your table? "))
+    cat("How many rows are there in your table?\n")
+    m = as.numeric(readline())
+    cat("How many columns are there in your table?\n")
+    n = as.numeric(readline())
     
     nrow = 1:m
     ncol = 1:n
@@ -100,7 +103,8 @@ chi_test <- function(){
     for(j in ncol){
       for(i in nrow){
         count = count + 1
-        x[count] = as.numeric(readline(paste("What is the entry in row ",format(i,scientific=FALSE)," and column ",format(j,scientific=FALSE),"? ",sep="")))
+        cat(paste("What is the entry in row ",format(i,scientific=FALSE)," and column ",format(j,scientific=FALSE),"?\n",sep=""))
+        x[count] = as.numeric(readline())
       }
     }
     A = matrix(x,nrow=m)
@@ -126,7 +130,7 @@ chi_test <- function(){
     cat(paste("df  = ",format(out$parameter,scientific=FALSE),sep=""))
     cat("\n")
     cat("\n")
-    cat(paste("The probability of getting this result or more extreme if there really is no relationship is",sep=""))
+    cat(paste("The probability of getting this result or more extreme\nif there really is no relationship is",sep=""))
     cat("\n")
     cat(paste("p = ",format(out$p.value,scientific=FALSE)))
     cat("\n")
@@ -161,22 +165,26 @@ chi_test <- function(){
     
   }
   if(compare=="goodness"){
-    m = as.numeric(readline("How many categories are there in your distribution? "))
+    cat("How many categories are there in your distribution?\n")
+    m = as.numeric(readline())
     
     nrow = 1:m
     x = rep(0,m)
     count = 0
     for(i in nrow){
-      x[i] = as.numeric(readline(paste("What is entry number ",format(i,scientific=FALSE)," in your sample? ",sep="")))
+      cat(paste("What is entry number ",format(i,scientific=FALSE)," in your sample?\n",sep=""))
+      x[i] = as.numeric(readline())
     }
     
-    same = readline("Is your hypothesis that all categories are equally likely? ")
-    if(same=="yes"){p = rep(1/m,m)}
-    if(same=="no"){
+    cat("Is your hypothesis that all categories are equally likely?\n")
+    same = readline()
+    if(same=="yes" | same == "Yes" | same == "y" | same == "Y"){p = rep(1/m,m)}
+    if(same=="no" | same == "No" | same == "N" | same == "n"){
       p = rep(0,m)
       count = 0
       for(i in nrow){
-        p[i] = as.numeric(readline(paste("What is the theoretical probability of entry ",format(i,scientific=FALSE),"? ",sep="")))
+        cat(paste("What is the theoretical probability of entry ",format(i,scientific=FALSE),"?\n",sep=""))
+        p[i] = as.numeric(readline())
       }
     }
     out = suppressWarnings(chisq.test(x,p=p))
@@ -201,7 +209,7 @@ chi_test <- function(){
     cat(paste("df  = ",format(out$parameter,scientific=FALSE),sep=""))
     cat("\n")
     cat("\n")
-    cat(paste("The probability of getting this result or more extreme if the distribution is really the theoretical one",sep=""))
+    cat(paste("The probability of getting this result or more extreme if the distribution\nis really the theoretical one",sep=""))
     cat("\n")
     cat(paste("p = ",format(out$p.value,scientific=FALSE)))
     cat("\n")

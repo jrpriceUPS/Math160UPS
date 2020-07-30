@@ -4,70 +4,73 @@
 #' @export
 #' @examples
 #' 
-#' *******
-#' Z-TESTS
-#' *******
+#' 
+#' ****************
+#' Proportion Tests
+#' ****************
 #' 
 #' > stat.test()
-#' Are you considering a population mean (or means), a population proportion (or proportions), or a table of values? Possible answers are 'xbar', 'phat', or 'table'. xbar
-#' Do you know the *population* standard deviation? (this is rare) yes
-#' What is the *population* standard deviation? 4
-#' What is your sample mean? 8
-#' What is the theoretical mean you are testing against (called mu_0)? 7.5
-#' What is your sample size? 36
-#' What is your desired confidence level? .90
-#' Are you doing a one-sided or two-sided test? Possible answers are 'less', 'greater', and 'two-sided'. two-sided
-#' The probability of getting this result or more extreme for xbar if mu really is 7.5 is
-#' p =  0.4532547
+#' Are you considering a population mean (or means), a population proportion (or proportions), or a table of values?
+#' Possible answers are 'xbar', 'phat', or 'table'. phat
+#' Do you have a single population or are you comparing populations?
+#'   Possible answers are 'single' and 'comparing'. 
+#' single
+#' How many trials were there in your experiment? 
+#'   10
+#' How many successes were there? 
+#'   5
+#' The statistics for your dataset are: 
+#'   phat = 0.5
+#' s = sqrt(0.5*(1-0.5)/10) = 0.1581139
+#' 
+#' What is the theoretical proportion you are testing against (called p_0)? 
+#'   (If you only want a confidence interval, type 'NA')
+#' .2
+#' What is your desired confidence level? 
+#'   .9
+#' Are you doing a one-sided or two-sided test? Possible answers are 'less', 'greater', and 'two-sided'. 
+#' two-sided
+#' The probability of getting this result or more extreme for phat
+#' if the proportion really is 0.2 is 
+#' p =  0.0327935
+#' 
+#' The 90% confidence interval for the population proportion is
+#' 0.2224411  < p <  0.7775589
+#' 
 #' 
 #' You can get this result by typing:
-#'   2*(1-pnorm(8,7.5,4/sqrt(36))
-#'      
-#'      
-#'      The 90% confidence interval for the population mean is
-#'      6.903431  < mu <  9.096569
-#'      
-#'      You can get this result by finding:
-#'        zstar = 1-qnorm((1-0.9)/2,0,1) = 1.644854
-#'      
-#'      and then calculating:
-#'        8 - 1.644854 x 4/sqrt(36)  and  8 + 1.644854 x 4/sqrt(36)
-#'        
-#'        
-#'        
-#'        
-#'        
-#'        
+#'   binom.test(x = 5, n = 10, p = 0.2, alternative = 'two.sided', conf.level = 0.9)
+#'   
+#'   
+#'   
+#'   
+#'   
+#'   
 #' > stat.test()
-#' Are you considering a population mean (or means), a population proportion (or proportions), or a table of values? Possible answers are 'xbar', 'phat', or 'table'. xbar
-#' Do you know the *population* standard deviation? (this is rare) yes
-#' What is the *population* standard deviation? 4
-#' What is your sample mean? 8
-#' What is the theoretical mean you are testing against (called mu_0)? 7.5
-#' What is your sample size? 16
-#' What is your desired confidence level? .99
-#' Are you doing a one-sided or two-sided test? Possible answers are 'less', 'greater', and 'two-sided'. less
-#' The probability of getting this result or more extreme for xbar if mu really is 7.5 is
-#' p =  0.6914625
+#' Are you considering a population mean (or means), a population proportion (or proportions), or a table of values? Possible answers are 'xbar', 'phat', or 'table'. phat
+#' Do you have a single population or are you comparing populations? Possible answers are 'single' and 'comparing'. comparing
+#' How many trials were there in your first sample? 15
+#' How many successes were there in your first sample? 10
+#' How many trials were there in your second sample? 20
+#' How many successes were there in your second sample? 10
+#' The statistics for your dataset are: 
+#'   phat1 = 0.6666667
+#' phat2 = 0.5
+#' s = sqrt(0.6666667*(1-0.6666667)/15+0.5*(1-0.5)/20) = 0.1652719
+#' What is your desired confidence level? .95
+#' Are you checking whether the proportion of the second population is less, greater, or different than the proportion of the first population? Possible answers are 'less', 'greater', and 'different'. greater
+#' The probability of getting this result or more extreme for phat2 - phat1 if phat1 really is bigger than phat2 is
+#' p =  0.739209
+#' 
+#' The 95% confidence interval for the difference in proportions is
+#' -0.5489271  < p2 - p1 <  0.2155937
+#' 
 #' 
 #' You can get this result by typing:
-#'   pnorm(8,7.5,4/sqrt(16))
+#'   prop.test(c(10,10), c(20,15), alternative = 'greater', conf.level = 0.95)
 #' 
-#' 
-#' The 99% confidence interval for the population mean is
-#' 5.424171  < mu <  10.57583
-#' 
-#' You can get this result by finding:
-#'   zstar = 1-qnorm((1-0.99)/2,0,1) = 2.575829
-#' 
-#' and then calculating:
-#'   8 - 2.575829 x 4/sqrt(16)  and  8 + 2.575829 x 4/sqrt(16)
-#'   
-#'   
-#'   
-#'   
-#'   
-#'   
+#' For the confidence interval, you would type:
+#'   prop.test(c(10,10), c(20,15), alternative = 'two.sided',conf.level = 0.95)
 #'   
 #' *******
 #' t-Tests
@@ -171,7 +174,7 @@
 #' s2 =  4.595236
 #' 
 #' The statistics for the difference are: 
-  #'   xbar =  4.842857
+#'   xbar =  4.842857
 #' s =  2.445988
 #' n =  7
 #' df =  7 - 1 =  6
@@ -301,61 +304,6 @@
 #'   
 #'   
 #'   
-#' ****************
-#' Proportion Tests
-#' ****************
-#' 
-#' > stat.test()
-#' Are you considering a population mean (or means), a population proportion (or proportions), or a table of values? Possible answers are 'xbar', 'phat', or 'table'. phat
-#' Do you have a single population or are you comparing populations? Possible answers are 'single' and 'comparing'. single
-#' How many trials were there in your experiment? 10
-#' How many successes were there? 5
-#' The statistics for your dataset are: 
-#'   phat = 0.5
-#' s = sqrt(0.5*(1-0.5)/10) = 0.1581139
-#' What is the theoretical proportion you are testing against (called p_0)? .2
-#' What is your desired confidence level? .9
-#' Are you doing a one-sided or two-sided test? Possible answers are 'less', 'greater', and 'two-sided'. two-sided
-#' The probability of getting this result or more extreme for phat if the proportion really is 0.2 is 
-#' p =  0.0327935
-#' 
-#' The 90% confidence interval for the population proportion is
-#' 0.187086  < p <  0.812914
-#' 
-#' 
-#' You can get this result by typing:
-#'   binom.test(x = 0, n = 10, p = 0.2, alternative = 'two.sided', conf.level = 0.9)
-#'   
-#'   
-#'   
-#'   
-#'   
-#'   
-#' > stat.test()
-#' Are you considering a population mean (or means), a population proportion (or proportions), or a table of values? Possible answers are 'xbar', 'phat', or 'table'. phat
-#' Do you have a single population or are you comparing populations? Possible answers are 'single' and 'comparing'. comparing
-#' How many trials were there in your first sample? 15
-#' How many successes were there in your first sample? 10
-#' How many trials were there in your second sample? 20
-#' How many successes were there in your second sample? 10
-#' The statistics for your dataset are: 
-#'   phat1 = 0.6666667
-#' phat2 = 0.5
-#' s = sqrt(0.6666667*(1-0.6666667)/15+0.5*(1-0.5)/20) = 0.1652719
-#' What is your desired confidence level? .95
-#' Are you checking whether the proportion of the second population is less, greater, or different than the proportion of the first population? Possible answers are 'less', 'greater', and 'different'. greater
-#' The probability of getting this result or more extreme for phat2 - phat1 if phat1 really is bigger than phat2 is
-#' p =  0.739209
-#' 
-#' The 95% confidence interval for the difference in proportions is
-#' -0.5489271  < p2 - p1 <  0.2155937
-#' 
-#' 
-#' You can get this result by typing:
-#'   prop.test(c(10,10), c(20,15), alternative = 'greater', conf.level = 0.95)
-#' 
-#' For the confidence interval, you would type:
-#'   prop.test(c(10,10), c(20,15), alternative = 'two.sided',conf.level = 0.95)
 #'   
 #'   
 #'   
@@ -453,28 +401,18 @@
  
 stat.test <- function(){
   
-  x_or_p = readline("Are you considering a population mean (or means), a population proportion (or proportions), or a table of values? Possible answers are 'xbar', 'phat', or 'table'. ")
+  cat("Are you considering a population mean (or means), a population proportion (or proportions), or a table of values?\n")
+  x_or_p = readline("Possible answers are 'xbar', 'phat', or 'table'. ")
   
-  if(x_or_p=="xbar"){
-    
-    z = readline("Do you know the *population* standard deviation? (this is rare) ")
-    
-    
-    if(z == "yes"){
-      z_test()
-    }
-    
-    if(z == "no"){
+  if(x_or_p=="xbar" | x_or_p == "x" | x_or_p == "mu" | x_or_p == "mean" | x_or_p == "X" | x_or_p == "Mu" | x_or_p == "Mean"){
       t_test()
-    }
   }
   
-  if(x_or_p=="phat"){
-    
+  if(x_or_p=="phat" | x_or_p == "p" | x_or_p == "proportion" | x_or_p == "prop" | x_or_p == "P" | x_or_p == "Proportion" | x_or_p == "Prop"){
     prop_test()
   }
   
-  if(x_or_p=="table"){
+  if(x_or_p=="table" | x_or_p == "chi"){
     chi_test()
   }
 }

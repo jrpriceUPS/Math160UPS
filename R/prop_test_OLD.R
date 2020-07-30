@@ -1,4 +1,6 @@
 #' Proportion Test
+#' 
+#' In this old version, one-sided tests are permitted.
 #'
 #' This function asks you a sequence of questions in order to execute a proportion test. It finds a confidence interval and a p-value, produces a plot, and indicates how this could be queried directly from R.
 #' @export
@@ -20,6 +22,8 @@
 #' .2
 #' What is your desired confidence level? 
 #'   .9
+#' Are you doing a one-sided or two-sided test? Possible answers are 'less', 'greater', and 'two-sided'. 
+#' two-sided
 #' The probability of getting this result or more extreme for phat
 #' if the proportion really is 0.2 is 
 #' p =  0.0327935
@@ -61,7 +65,7 @@
 #' For the confidence interval, you would type:
 #'   prop.test(c(10,10), c(20,15), alternative = 'two.sided',conf.level = 0.95)
 
-prop_test <- function(){
+prop_test_OLD <- function(){
   cat("Do you have a single population or are you comparing populations?\nPossible answers are 'single' and 'comparing'. \n")
   compare = readline()
   
@@ -115,29 +119,58 @@ prop_test <- function(){
       cat("What is your desired confidence level? \n")
       conf_level = as.numeric(readline())
     }
-
-    out = prop.test(c(X2,X1),c(n2,n1),alternative="two.sided",conf.level=conf_level)
-    normal_p(X2/n2-X1/n1, 0, sqrt(p*(1-p)*(1/n1+1/n2)), "both", print = FALSE)
+    cat("Are you checking whether the proportion of the second population is less, greater,\n")
+    cat("or different than the proportion of the first population?\n")
+    cat("(If you only want a confidence interval, type 'NA')\n")
+    cat("Possible answers are 'less', 'greater', 'different', and 'NA'. \n")
+    sidedness = readline()
+    
+    sidedness2=sidedness
+    if(sidedness=="different"){
+      sidedness = "two.sided"
+      sidedness2 = "both"
+    }
+    if(sidedness!="NA"){
+      out = prop.test(c(X2,X1),c(n2,n1),alternative=sidedness,conf.level=conf_level)
+      normal_p(X2/n2-X1/n1, 0, sqrt(p*(1-p)*(1/n1+1/n2)), sidedness2, print = FALSE)}
+    out_conf = binom.test(c(X2,X1),c(n2,n1),alternative="two.sided",conf.level=conf_level)
     
     
+    if(sidedness=="two.sided"){
+      first_statement = paste("The probability of getting this result or more extreme for phat2 - phat1 if there really is no difference is")
+    }
+    if(sidedness=="less"){
+      first_statement = paste("The probability of getting this result or more extreme for phat2 - phat1 if phat1 really is bigger than phat2 is")
+    }
+    if(sidedness=="greater"){
+      first_statement = paste("The probability of getting this result or more extreme for phat2 - phat1 if phat1 really is bigger than phat2 is")
+    }
     
-    cat("The probability of getting this result or more extreme for phat2 - phat1\nif there really is no difference is")
-    cat("\n")
-    cat(paste("p = ",format(out$p.value,scientific=FALSE)))
-    cat("\n")
-    cat("\n")
+    if(sidedness!="NA"){
+      cat(first_statement)
+      cat("\n")
+      cat(paste("p = ",format(out$p.value,scientific=FALSE)))
+      cat("\n")
+      cat("\n")}
     cat(paste("The ",toString(conf_level*100),"% confidence interval for the difference in proportions is",sep=""))
     cat("\n")
-    cat(paste(format(out$conf.int[1],scientific=FALSE)," < p2 - p1 < ",format(out$conf.int[2],scientific=FALSE)))
-    cat("\n")
-    cat("\n")
-    cat("\n")
-    cat("You can get this result by typing:")
-    cat("\n")
-    cat(paste("prop.test(c(",format(X2,scientific=FALSE),",",format(X1,scientific=FALSE),"), c(",format(n2,scientific=FALSE),",",format(n1,scientific=FALSE),"), alternative = 'two.sided', conf.level = ",format(conf_level,scientific=FALSE), ")",sep=""))
+    cat(paste(format(out_conf$conf.int[1],scientific=FALSE)," < p2 - p1 < ",format(out_conf$conf.int[2],scientific=FALSE)))
+    if(sidedness!="NA"){cat("\n")
+      cat("\n")
+      cat("\n")
+      cat("You can get this result by typing:")
+      cat("\n")
+      cat(paste("prop.test(c(",format(X2,scientific=FALSE),",",format(X1,scientific=FALSE),"), c(",format(n2,scientific=FALSE),",",format(n1,scientific=FALSE),"), alternative = '",sidedness,"', conf.level = ",format(conf_level,scientific=FALSE), ")",sep=""))
+    }
     
-}
-
+    if(sidedness!="two.sided"){
+      cat("\n")
+      cat("\n")
+      cat("For the confidence interval, you would type:")
+      cat("\n")
+      cat(paste("prop.test(c(",format(X2,scientific=FALSE),",",format(X1,scientific=FALSE),"), c(",format(n2,scientific=FALSE),",",format(n1,scientific=FALSE),"), alternative = 'two.sided',", "conf.level = ",format(conf_level,scientific=FALSE), ")",sep=""))
+    }
+  }
   
   if(compare=="single"){
     cat("How many trials were there in your experiment? \n")
@@ -174,48 +207,80 @@ prop_test <- function(){
     
     
     if(p_0!="NA"){
-      sidedness = "two.sided"
-      sidedness2 = "both"
-      out = binom.test(X,n,p=p_0,alternative="two.sided")}
+      cat("Are you doing a one-sided or two-sided test? Possible answers are 'less', 'greater', and 'two-sided'. \n")
+      sidedness = readline()
+      
+      if(sidedness == "t"){sidedness = "two-sided"}
+      if(sidedness == "g"){sidedness = "greater"}
+      if(sidedness == "l"){sidedness = "less"}
+      
+      while(sidedness != "two-sided" & sidedness != "greater" & sidedness != "less"){cat("Please choose one of 'less', 'greater', and 'two-sided'.\n")
+        cat("Are you doing a one-sided or two-sided test? Possible answers are 'less', 'greater', and 'two-sided'. \n")
+        sidedness = readline()
+      }
+      
+      sidedness2=sidedness
+      if(sidedness=="two-sided"){
+        sidedness = "two.sided"
+        sidedness2 = "both"
+      }
+      
+      out = binom.test(X,n,p=p_0,alternative=sidedness)}
+    
+    if(p_0!="NA"){
+      out_conf = binom.test(X,n,p=p_0,alternative="two.sided", conf.level = conf_level)}
     
     if(p_0=="NA"){out_conf = binom.test(X,n,p=0.5,alternative="two.sided",conf.level = conf_level)}
     
     
     
     if(p_0!="NA"){
-    if(n>=100){
-      normal_p(X/n, p_0, s, sidedness2, print = FALSE)
-    }
-    
-    
-    if(n<100){
-      cols = rep("gray",n+1)
-      
-      if(X<=p_0*n){
-        Y = min(c(p_0*n+(p_0*n-X),n))
-        newX = X
-      if(X>=p_0*n){
-        Y = X
-        newX = max(c(p_0*n-(Y - p_0*n),0))
+      if(n>=100){
+        normal_p(X/n, p_0, s, sidedness2, print = FALSE)
       }
+      
+      
+      if(n<100){
         cols = rep("gray",n+1)
-        cols[1:(newX+1)] = rep("skyblue",newX+1)
-        cols[(Y+1):(n+1)] = rep("skyblue",n-Y+1)
+        
+        if(sidedness == "less"){
+          cols[1:(X+1)] = rep("skyblue",X+1)
+          word = "less"
+        }
+        
+        if(sidedness == "greater"){
+          cols[(X+1):(n+1)] = rep("skyblue",n-X+1)
+          word = "greater"
+        }
+        
+        if(sidedness == "two.sided"){
+          if(X<=p_0*n){
+            Y = min(c(p_0*n+(p_0*n-X),n))
+            newX = X
+          }
+          if(X>=p_0*n){
+            Y = X
+            newX = max(c(p_0*n-(Y - p_0*n),0))
+          }
+          cols = rep("gray",n+1)
+          cols[1:(newX+1)] = rep("skyblue",newX+1)
+          cols[(Y+1):(n+1)] = rep("skyblue",n-Y+1)
+          word = "more extreme"
+        }
+        
+        barplot(dbinom(0:n,n,p_0),names = c(0:n),col=cols)
       }
-      
-      barplot(dbinom(0:n,n,p_0),names = c(0:n),col=cols)
-    }
     }
     
     if(p_0!="NA"){
-    cat(paste("The probability of getting this result or more extreme for phat\nif the proportion really is ",format(p_0,scientific=FALSE)," is ",sep=""))
-    cat("\n")
-    cat(paste("p = ",format(out$p.value,scientific=FALSE)))
-    cat("\n")
-    cat("\n")}
+      cat(paste("The probability of getting this result or ",word," for phat\nif the proportion really is ",format(p_0,scientific=FALSE)," is ",sep=""))
+      cat("\n")
+      cat(paste("p = ",format(out$p.value,scientific=FALSE)))
+      cat("\n")
+      cat("\n")}
     cat(paste("The ",toString(conf_level*100),"% confidence interval for the population proportion is",sep=""))
     cat("\n")
-    cat(paste(format(out$conf.int[1],scientific=FALSE)," < p < ",format(out$conf.int[2],scientific=FALSE)))
+    cat(paste(format(out_conf$conf.int[1],scientific=FALSE)," < p < ",format(out_conf$conf.int[2],scientific=FALSE)))
     cat("\n")
     cat("\n")
     cat("\n")
@@ -227,9 +292,18 @@ prop_test <- function(){
     if(p_0 == "NA"){
       cat(paste("binom.test(x = ",format(X,scientific=FALSE),", n = ",format(n,scientific=FALSE),", conf.level = ", format(conf_level,scientific=FALSE),")",sep=""))
     }
-  
-  
-  
-  
+    
+    if(p_0!="NA"){
+      if(sidedness!="two.sided"){
+        cat("\n")
+        cat("\n")
+        cat("For the confidence interval, you would type:")
+        cat("\n")
+        cat(paste("binom.test(x = ",format(X,scientific=FALSE),", n = ",format(n,scientific=FALSE),", p = ",format(p_0,scientific=FALSE),", alternative = 'two.sided', conf.level = ", format(conf_level,scientific=FALSE),")",sep=""))
+      }}
+    
+    
+    
+    
   }
 }
