@@ -217,8 +217,10 @@
 #'   t.test(y,x)
 
 t_test <- function(){
-  compare = readline("Do you have a single population or are you comparing populations? Possible answers are 'single' and 'comparing'. ")
-  vec = readline("Do you have the whole dataset or do you just have the statistics (mean, standard deviation)? Possible answers are 'whole' or 'stats'. ")
+  cat("Do you have a single population or are you comparing populations?\nPossible answers are 'single' and 'comparing'.\n")
+  compare = readline()
+  cat("Do you have the whole dataset or do you just have the statistics (mean, standard deviation)?\nPossible answers are 'whole' or 'stats'.\n")
+  vec = readline()
   
   if(compare=="comparing"){
     matched = readline("Is this a matched-pairs comparison in which the same subjects are measured twice? ")
@@ -625,14 +627,18 @@ t_test <- function(){
   
   if(compare=="single"){
     if(vec=="stats"){
-      xbar = as.numeric(readline("What is your sample mean? "))
-      s = as.numeric(readline("What is your sample standard deviation? "))
-      n = as.numeric(readline("What is your sample size? "))
+      cat("What is your sample mean? \n")
+      xbar = as.numeric(readline())
+      cat("What is your sample standard deviation? \n")
+      s = as.numeric(readline())
+      cat("What is your sample size? \n")
+      n = as.numeric(readline())
       df = n-1
     }
     
     if(vec=="whole"){
-      varname = readline("What is the name of your variable? ")
+      cat("What is the name of your variable? \n")
+      varname = readline()
       if(grepl("$", varname, fixed=TRUE)){
         names = strsplit(varname,"\\$")
         frame = get(names[[1]])
@@ -658,17 +664,18 @@ t_test <- function(){
       cat("\n")
     }
     
-    mu_0 = readline("What is the theoretical mean you are testing against (called mu_0)? ")
+    cat("What is the theoretical mean you are testing against (called mu_0)?\n")
+    cat("(If you only want a confidence interval, type 'NA')\n")
+    mu_0 = readline()
     if(mu_0!="NA"){mu_0 = as.numeric(mu_0)}
-    conf_level = as.numeric(readline("What is your desired confidence level? "))
-    while(conf_level<0 | conf_level>1){cat('Please choose a confidence level between 0 and 1')
-      conf_level = as.numeric(readline("What is your desired confidence level? "))
+    cat("What is your desired confidence level? \n")
+    conf_level = as.numeric(readline())
+    while(conf_level<0 | conf_level>1){cat('Please choose a confidence level between 0 and 1\n')
+      cat("What is your desired confidence level? \n")
+      conf_level = as.numeric(readline())
     }
-    if(mu_0!="NA"){
-    sidedness = readline("Are you doing a one-sided or two-sided test? Possible answers are 'less', 'greater', 'two-sided', and 'NA'. ")
-    if(sidedness=="two-sided"){
-      sidedness = "both"
-    }}
+    
+    sidedness = "both"
     
     if(mu_0!="NA"){
     t = (xbar - mu_0)/(s/sqrt(n))
@@ -729,7 +736,7 @@ t_test <- function(){
     cat(paste("t  = (",format(xbar,scientific=FALSE),"-",format(mu_0,scientific=FALSE),")/(",format(s,scientific=FALSE),"/sqrt(",format(n,scientific=FALSE),")) = ",format(t,scientific=FALSE),sep=""))
     cat("\n")
     cat("\n")
-    cat(paste("The probability of getting this result or more extreme for xbar if mu really is ",toString(mu_0)," is",sep=""))
+    cat(paste("The probability of getting this result or more extreme for xbar\nif mu really is ",toString(mu_0)," is",sep=""))
     cat("\n")
     cat(paste("p = ",format(out$prob,scientific=FALSE)))
     cat("\n")
@@ -761,14 +768,9 @@ t_test <- function(){
       cat("Or, since you have the whole dataset, you could just type:")
       cat("\n")
       if(sidedness=="both"){
-        cat(paste("t.test(",varname,",mu = ",format(mu_0,scientific=FALSE),")",sep=""))
+        cat(paste("t.test(",varname,",mu = ",format(mu_0,scientific=FALSE),",conf.level = ",toString(conf_level),")",sep=""))
       }
-      if(sidedness=="less"){
-        cat(paste("t.test(",varname,",mu=",format(mu_0,scientific=FALSE),",alternative='less'",")",sep=""))
-      }
-      if(sidedness=="greater"){
-        cat(paste("t.test(",varname,",mu=",format(mu_0,scientific=FALSE),",alternative='greater'",")",sep=""))
-      }
+      
       
     }
   }

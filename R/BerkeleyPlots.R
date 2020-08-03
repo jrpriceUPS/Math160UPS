@@ -1,6 +1,5 @@
 BerkeleyPlots = function(){
 
-library("Math160UPS")
 data(UCBerkeley)
 
 male = subset(UCBerkeley, Gender == "Male")
