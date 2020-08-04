@@ -223,33 +223,19 @@ t_test <- function(){
   vec = readline()
   
   if(compare=="comparing"){
-    matched = readline("Is this a matched-pairs comparison in which the same subjects are measured twice? ")
-    if(matched=="yes"){
+    cat("Is this a matched-pairs comparison in which the same subjects are measured twice? \n")
+    matched = readline()
+    if(matched=="yes" | matched == "y" | matched == "Yes" | matched == "Y"){
       if(vec=="stats"){
-        xbar1 = as.numeric(readline("What is the sample mean of the first set of measurements? "))
-        xbar2 = as.numeric(readline("What is the sample mean of the second set of measurements? "))
-        s1 = as.numeric(readline("What is the sample standard deviation of the first set of measurements? "))
-        s2 = as.numeric(readline("What is the sample standard deviation of the second set of measurements? "))
-        n = as.numeric(readline("What is the sample size? "))
-        df = n-1
-        xbar = xbar2-xbar1
-        s = sqrt(s1^2+s2^2)
-        cat("The statistics for the difference are: ")
-        cat("\n")
-        cat(paste("xbar = ",format(xbar,scientific=FALSE)))
-        cat("\n")
-        cat(paste("s = ",format(s,scientific=FALSE)))
-        cat("\n")
-        cat(paste("n = ",format(n,scientific=FALSE)))
-        cat("\n")
-        cat(paste("df = ",format(n,scientific=FALSE),"- 1 = ",format(n-1,scientific=FALSE)))
-        cat("\n")
-        cat("\n")
+        cat("Unfortunately, you need the whole datasets to conduct a matched-pair analysis like this.\nIf you have the statistics of the *differences* then you can do a 'single' t-test on that!\n")
+        return()
       }
       
       if(vec=="whole"){
-        varname1 = readline("What is the name of the variable for the first set of measurements? ")
-        varname2 = readline("What is the name of the variable for the second set of measurements? ")
+        cat("What is the name of the variable for the first set of measurements? \n")
+        varname1 = readline()
+        cat("What is the name of the variable for the second set of measurements? \n")
+        varname2 = readline()
         if(grepl("$", varname1, fixed=TRUE)){
           names = strsplit(varname1,"\\$")
           frame = get(names[[1]])
@@ -301,22 +287,18 @@ t_test <- function(){
         cat("\n")
         cat("\n")
         
+      
+      cat("What is your desired confidence level? \n")
+      conf_level = as.numeric(readline())
+      while(conf_level<0 | conf_level>1){cat('Please choose a confidence level between 0 and 1\n')
+        cat("What is your desired confidence level? \n")
+        conf_level = as.numeric(readline())
       }
       
-      conf_level = as.numeric(readline("What is your desired confidence level? "))
-      while(conf_level<0 | conf_level>1){cat('Please choose a confidence level between 0 and 1')
-        conf_level = as.numeric(readline("What is your desired confidence level? "))
-      }
-      sidedness = readline("Are you checking whether the mean of the second population is less, greater, or different than the mean of the first population? Possible answers are 'less', 'greater', 'different', and 'NA'. ")
-      
-      if(sidedness=="different"){
-        sidedness = "both"
-      }
-      
-      if(sidedness!="NA"){
+     
       t = xbar/(s/sqrt(n))
       df = n-1
-      out = conduct_t_test(t,df,sidedness)}
+      out = conduct_t_test(t,df,"both")
       
       # new version with only one-sided confidence intervals:
       tstar = -qt((1-conf_level)/2,df)
@@ -330,48 +312,10 @@ t_test <- function(){
       
       
       
-      if(sidedness!="NA"){
-      if(sidedness == "both"){
-        
-        # tstar = -qt((1-conf_level)/2,df)
-        # 
-        # thing_to_type2 = paste("tstar = 1-qt((1-",format(conf_level,scientific=FALSE),")/2,",format(df,scientific=FALSE),") = ",format(tstar,scientific=FALSE),sep="")
-        # thing_to_type3 = paste("(",toString(xbar2),"-",toString(xbar1),") - ",format(tstar,scientific=FALSE)," x ",format(s,scientific=FALSE),"/sqrt(",toString(n),")",sep="")
-        # thing_to_type4 = paste("(",toString(xbar2),"-",toString(xbar1),") + ",format(tstar,scientific=FALSE)," x ",format(s,scientific=FALSE),"/sqrt(",toString(n),")",sep="")
-        # 
-        # lower = xbar - tstar*s/sqrt(n)
-        # upper = xbar + tstar*s/sqrt(n)
+      
         
         sidedness_type = paste("The probability of getting this result or more extreme for xbar2 - xbar1 if there really is no difference is",sep="")
-      }
       
-      if(sidedness == "less"){
-        
-        # tstar = qt(conf_level,df)
-        # 
-        # thing_to_type2 = paste("tstar = qt(",format(conf_level,scientific=FALSE),",",format(df,scientific=FALSE),") = ",format(tstar,scientific=FALSE),sep="")
-        # thing_to_type3 = "-Infinity"
-        # thing_to_type4 = paste("(",toString(xbar2),"-",toString(xbar1),") + ",format(tstar,scientific=FALSE)," x ",format(s,scientific=FALSE),"/sqrt(",toString(n),")",sep="")
-        # 
-        # lower = -Inf
-        # upper = xbar + tstar*s/sqrt(n)
-        
-        sidedness_type = paste("The probability of getting this result or more extreme for xbar2 - xbar1 if mu2 really is bigger than mu1 is",sep="")
-      }
-      
-      if(sidedness == "greater"){
-        # tstar = qt(conf_level,df)
-        # 
-        # thing_to_type2 = paste("tstar = qt(",format(conf_level,scientific=FALSE),",",format(df,scientific=FALSE),") = ",format(tstar,scientific=FALSE),sep="")
-        # thing_to_type3 = paste("(",toString(xbar2),"-",toString(xbar1),") - ",format(tstar,scientific=FALSE)," x ",format(s,scientific=FALSE),"/sqrt(",toString(n),")",sep="")
-        # thing_to_type4 = "Infinity"
-        # 
-        # lower = xbar - tstar*s/sqrt(n)
-        # upper = Inf
-        
-        sidedness_type = paste("The probability of getting this result or more extreme for xbar2 - xbar1 if mu1 really is bigger than mu2 is",sep="")
-        
-      }
       
       
       
@@ -390,7 +334,7 @@ t_test <- function(){
       cat(out$p_value_type)
       cat("\n")
       cat("\n")
-      cat("\n")}
+      cat("\n")
       cat(paste("The ",toString(conf_level*100),"% confidence interval for the difference in population means is",sep=""))
       cat("\n")
       cat(paste(format(lower,scientific=FALSE)," < mu2 - mu1 < ",format(upper,scientific=FALSE)))
@@ -404,23 +348,17 @@ t_test <- function(){
       cat("and then calculating:")
       cat("\n")
       cat(paste(thing_to_type3," and ",thing_to_type4))
-      
-      if(vec=="whole"){
+
         cat("\n")
         cat("\n")
         cat("\n")
         cat("Or, since you have the whole dataset, you could just type:")
         cat("\n")
-        if(sidedness=="both"){
-          cat(paste("t.test(",varname2,",",varname1,",paired=TRUE)",sep=""))
-        }
-        if(sidedness=="less"){
-          cat(paste("t.test(",varname2,",",varname1,",paired=TRUE,alternative='less')",sep=""))
-        }
-        if(sidedness=="greater"){
-          cat(paste("t.test(",varname2,",",varname1,",paired=TRUE,alternative='greater')",sep=""))
-        }
+          cat(paste("t.test(",varname2,",",varname1,", paired = TRUE, conf.level = ", toString(conf_level),")",sep=""))
+
+
         
+      
       }
     }
     

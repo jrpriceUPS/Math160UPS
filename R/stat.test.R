@@ -402,7 +402,8 @@
 stat.test <- function(){
   
   cat("Are you considering a population mean (or means), a population proportion (or proportions), or a table of values?\n")
-  x_or_p = readline("Possible answers are 'xbar', 'phat', or 'table'. ")
+  cat("Possible answers are 'xbar', 'phat', or 'table'. ")
+  x_or_p = readline()
   
   if(x_or_p=="xbar" | x_or_p == "x" | x_or_p == "mu" | x_or_p == "mean" | x_or_p == "X" | x_or_p == "Mu" | x_or_p == "Mean"){
       t_test()
