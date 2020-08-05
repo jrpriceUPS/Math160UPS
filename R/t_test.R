@@ -364,12 +364,18 @@ t_test <- function(){
     
     if(matched=="no"){
       if(vec=="stats"){
-        xbar1 = as.numeric(readline("What is the sample mean of the first set of measurements? "))
-        xbar2 = as.numeric(readline("What is the sample mean of the second set of measurements? "))
-        s1 = as.numeric(readline("What is the sample standard deviation of the first set of measurements? "))
-        s2 = as.numeric(readline("What is the sample standard deviation of the second set of measurements? "))
-        n1 = as.numeric(readline("What is the sample size of the first set of measurements? "))
-        n2 = as.numeric(readline("What is the sample size of the second set of measurements? "))
+        cat("What is the sample mean of the first set of measurements? \n")
+        xbar1 = as.numeric(readline())
+        cat("What is the sample mean of the second set of measurements? \n")
+        xbar2 = as.numeric(readline())
+        cat("What is the sample standard deviation of the first set of measurements? \n")
+        s1 = as.numeric(readline())
+        cat("What is the sample standard deviation of the second set of measurements? \n")
+        s2 = as.numeric(readline())
+        cat("What is the sample size of the first set of measurements? \n")
+        n1 = as.numeric(readline())
+        cat("What is the sample size of the second set of measurements? \n")
+        n2 = as.numeric(readline())
         xbar = xbar2-xbar1
         df = n1+n2-2
         s = sqrt(s1^2/n1+s2^2/n2)
@@ -385,8 +391,10 @@ t_test <- function(){
       }
       
       if(vec=="whole"){
-        varname1 = readline("What is the name of the variable for the first set of measurements? ")
-        varname2 = readline("What is the name of the variable for the second set of measurements? ")
+        cat("What is the name of the variable for the first set of measurements? \n")
+        varname1 = readline()
+        cat("What is the name of the variable for the second set of measurements? \n")
+        varname2 = readline()
         
         if(grepl("$", varname1, fixed=TRUE)){
           names = strsplit(varname1,"\\$")
@@ -443,16 +451,14 @@ t_test <- function(){
         cat("\n")
         
       }
-      
-      conf_level = as.numeric(readline("What is your desired confidence level? "))
-      while(conf_level<0 | conf_level>1){cat('Please choose a confidence level between 0 and 1')
+      cat("What is your desired confidence level? \n")
+      conf_level = as.numeric(readline())
+      while(conf_level<0 | conf_level>1){cat('Please choose a confidence level between 0 and 1\n')
+        cat("What is your desired confidence level? \n")
         conf_level = as.numeric(readline("What is your desired confidence level? "))
       }
       
-      sidedness = readline("Are you checking whether the mean of the second population is less, greater, or different than the mean of the first population? Possible answers are 'less', 'greater', 'different', and 'NA'. ")
-      if(sidedness=="different"){
-        sidedness = "both"
-      }
+      sidedness = "both"
       
       if(sidedness!="NA"){
       t = xbar/s
@@ -469,47 +475,9 @@ t_test <- function(){
       upper = xbar + tstar*s
       
       if(sidedness!="NA"){
-      if(sidedness == "both"){
-        
-        # tstar = -qt((1-conf_level)/2,df)
-        # 
-        # thing_to_type2 = paste("tstar = 1-qt((1-",format(conf_level,scientific=FALSE),")/2,",format(df,scientific=FALSE),") = ",format(tstar,scientific=FALSE),sep="")
-        # thing_to_type3 = paste("(",toString(xbar2),"-",toString(xbar1),") - ",format(tstar,scientific=FALSE)," x ",format(s,scientific=FALSE),sep="")
-        # thing_to_type4 = paste("(",toString(xbar2),"-",toString(xbar1),") + ",format(tstar,scientific=FALSE)," x ",format(s,scientific=FALSE),sep="")
-        # 
-        # lower = xbar - tstar*s
-        # upper = xbar + tstar*s
-        
+      
         sidedness_type = paste("The probability of getting this result or more extreme for xbar2 - xbar1 if there really is no difference is",sep="")
-      }
-      
-      if(sidedness == "less"){
-        
-        # tstar = qt(conf_level,df)
-        # 
-        # thing_to_type2 = paste("tstar = qt(",format(conf_level,scientific=FALSE),",",format(df,scientific=FALSE),") = ",format(tstar,scientific=FALSE),sep="")
-        # thing_to_type3 = "-Infinity"
-        # thing_to_type4 = paste("(",toString(xbar2),"-",toString(xbar1),") + ",format(tstar,scientific=FALSE)," x ",format(s,scientific=FALSE),sep="")
-        # 
-        # lower = -Inf
-        # upper = xbar + tstar*s
-        
-        sidedness_type = paste("The probability of getting this result or more extreme for xbar2 - xbar1 if mu2 really is bigger than mu1",sep="")
-      }
-      
-      if(sidedness == "greater"){
-        # tstar = qt(conf_level,df)
-        # 
-        # thing_to_type2 = paste("tstar = qt(",format(conf_level,scientific=FALSE),",",format(df,scientific=FALSE),") = ",format(tstar,scientific=FALSE),sep="")
-        # thing_to_type3 = paste("(",toString(xbar2),"-",toString(xbar1),") - ",format(tstar,scientific=FALSE)," x ",format(s,scientific=FALSE),sep="")
-        # thing_to_type4 = "Infinity"
-        # 
-        # lower = xbar - tstar*s
-        # upper = Inf
-        
-        sidedness_type = paste("The probability of getting this result or more extreme for xbar2 - xbar1 if mu1 really is bigger than mu2",sep="")
-        
-      }
+  
       
       
       
@@ -549,19 +517,14 @@ t_test <- function(){
         cat("\n")
         cat("Or, since you have the whole dataset, you could just type:")
         cat("\n")
-        if(sidedness=="both"){
-          cat(paste("t.test(",varname2,",",varname1,")",sep=""))
-        }
-        if(sidedness=="less"){
-          cat(paste("t.test(",varname2,",",varname1,",alternative='less')",sep=""))
-        }
-        if(sidedness=="greater"){
-          cat(paste("t.test(",varname2,",",varname1,",alternative='greater')",sep=""))
-        }
+        cat(paste("t.test(",varname2,",",varname1,", conf.level = ", toString(conf_level), ")",sep=""))
+       
         
       }
+    
     }
   }
+  
   
   if(compare=="single"){
     if(vec=="stats"){
@@ -715,5 +678,4 @@ t_test <- function(){
   
   
   
-  
-}
+  }

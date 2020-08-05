@@ -25,9 +25,10 @@
 #'   abline(model)
 
 linreg <- function(){
-  
-  varname1 = readline("What is the name of the list with your x variable? ")
-  varname2 = readline("What is the name of the list with your y variable? ")
+  cat("What is the name of the list with your x variable? \n")
+  varname1 = readline()
+  cat("What is the name of the list with your y variable? \n")
+  varname2 = readline()
   
   if(grepl("$", varname1, fixed=TRUE)){
     names = strsplit(varname1,"\\$")

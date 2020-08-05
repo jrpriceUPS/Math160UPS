@@ -23,8 +23,10 @@
 
 find_residuals <- function(){
   
-  varname1 = readline("What is the name of the list with your x variable? ")
-  varname2 = readline("What is the name of the list with your y variable? ")
+  cat("What is the name of the list with your x variable? \n")
+  varname1 = readline()
+  cat("What is the name of the list with your y variable? \n")
+  varname2 = readline()
   
   if(grepl("$", varname1, fixed=TRUE)){
     names = strsplit(varname1,"\\$")
@@ -51,7 +53,6 @@ find_residuals <- function(){
   
   intercept = as.numeric(coefficients(regress)[1])
   slope = as.numeric(coefficients(regress)[2])
-  cat(paste("You should first remove any NAs from ",varname1," and ",varname2," using remove_NA2().\n\n",sep=""))
   cat(paste("The best fit line for these data is:"))
   cat("\n")
   cat(paste(varname2," = ",toString(slope)," x (",varname1,") + ",toString(intercept),sep=""))
@@ -66,16 +67,20 @@ find_residuals <- function(){
   cat("\n")
 
   
-  resid(regress,na.action=na.exclude)
-  plot(x,resid(regress,na.action=na.exclude),xlab=varname1,ylab="Residual")
+  
+  
     
   cat(paste("and then typing:"))
   cat("\n")
-  cat(paste("resid(model)"))
+  cat(paste("resid(model)\n"))
+  
+  print(resid(regress))
   cat("\n")
   cat("\n")
-  cat(paste("To plot them, type:\n"))
+  cat(paste("To plot them, you first need to remove all NAs from",varname1,"and",varname2,"\n(beyond the scope of this course), then type:\n"))
   cat(paste("plot(",varname1,",resid(model))",sep=""))
+  
+  plot(x,resid(regress),xlab=varname1,ylab="Residual")
   
   
 }
