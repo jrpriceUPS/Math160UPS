@@ -81,6 +81,7 @@ find_residuals <- function(){
   cat(paste("plot(",varname1,",resid(model))",sep=""))
   
   plot(x,resid(regress),xlab=varname1,ylab="Residual")
+  abline(0,0)
   
   
 }
