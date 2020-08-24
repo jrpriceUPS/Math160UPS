@@ -4,8 +4,13 @@
 \alias{confint_activity}
 \title{Guide the class in constructing confidence intervals}
 \usage{
-confint_activity(n = 9, numstudents = "N", conf = 0.95)
+confint_activity(
+  n = 20,
+  numstudents = "N",
+  conf = 0.95,
+  section_name = "section"
+)
 }
 \description{
-Allows students to calculate their own sample mean and use it to make a confidence interval.
+Allows students to calculate their own sample proportion and use it to make a confidence interval.
 }

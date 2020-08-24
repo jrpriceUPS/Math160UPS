@@ -4,7 +4,12 @@
 \alias{hyp_test_activity}
 \title{Guide the class in conducting hypothesis tests}
 \usage{
-hyp_test_activity(n = 9, numstudents = "N")
+hyp_test_activity(
+  n = 20,
+  numstudents = "N",
+  conf = 0.95,
+  section_name = "section"
+)
 }
 \description{
 Allows students to calculate their own sample mean and use it to do a significance test.
