@@ -1,3 +1,10 @@
+#' Demo of Student's t-distribution
+#'
+#' This function allows you to produce samples for every student in a class as a way of seeing
+#' the shape of Student's t-distribution.
+#' @export
+#' @examples
+
 t_dist_demo = function(n = 4,numstudents = "N",section_name = "section"){
   students = get("students")
   sleep = students$Sleep[!is.na(students$Sleep)]
