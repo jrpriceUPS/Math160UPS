@@ -32,7 +32,7 @@ if the proportion really is 0.2 is
 p =  0.0327935
 
 The 90\% confidence interval for the population proportion is
-0.2224411  < p <  0.7775589
+0.187086  < p <  0.812914
 
 
 You can get this result by typing:
@@ -44,27 +44,31 @@ You can get this result by typing:
   
   
 > prop_test()
-Do you have a single population or are you comparing populations? Possible answers are 'single' and 'comparing'. comparing
-How many trials were there in your first sample? 15
-How many successes were there in your first sample? 10
-How many trials were there in your second sample? 20
-How many successes were there in your second sample? 10
+Do you have a single population or are you comparing populations?
+  Possible answers are 'single' and 'comparing'. 
+comparing
+How many trials were there in your first sample? 
+  15
+How many successes were there in your first sample? 
+  10
+How many trials were there in your second sample? 
+  20
+How many successes were there in your second sample? 
+  10
 The statistics for your dataset are: 
   phat1 = 0.6666667
 phat2 = 0.5
 s = sqrt(0.6666667*(1-0.6666667)/15+0.5*(1-0.5)/20) = 0.1652719
-What is your desired confidence level? .95
-Are you checking whether the proportion of the second population is less, greater, or different than the proportion of the first population? Possible answers are 'less', 'greater', and 'different'. greater
-The probability of getting this result or more extreme for phat2 - phat1 if phat1 really is bigger than phat2 is
-p =  0.739209
+What is your desired confidence level? 
+  .95
+The probability of getting this result or more extreme for phat2 - phat1
+if there really is no difference is
+p =  0.521582
 
 The 95\% confidence interval for the difference in proportions is
 -0.5489271  < p2 - p1 <  0.2155937
 
 
 You can get this result by typing:
-  prop.test(c(10,10), c(20,15), alternative = 'greater', conf.level = 0.95)
-
-For the confidence interval, you would type:
-  prop.test(c(10,10), c(20,15), alternative = 'two.sided',conf.level = 0.95)
+  prop.test(c(10,10), c(20,15), alternative = 'two.sided', conf.level = 0.95)
 }

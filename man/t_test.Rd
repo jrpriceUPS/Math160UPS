@@ -10,24 +10,36 @@ t_test()
 This function asks you a sequence of questions in order to execute a t-test. It finds a confidence interval and a p-value, produces a plot, and indicates how this could be queried directly from R.
 }
 \examples{
+
+  
+  
+  
 > x = c(1, 2, 3, 4, 5, 6, 7)
 > t_test()
-Do you have a single population or are you comparing populations? Possible answers are 'single' and 'comparing'. single
-Do you have the whole dataset or do you just have the statistics (mean, standard deviation)? Possible answers are 'whole' or 'stats'. whole
-What is the name of your variable? x
+Do you have a single population or are you comparing populations?
+  Possible answers are 'single' and 'comparing'.
+single
+Do you have the whole dataset or do you just have the statistics (mean, standard deviation)?
+  Possible answers are 'whole' or 'stats'.
+whole
+What is the name of your variable? 
+  x
 The statistics for your dataset are: 
   xbar =  4
 s =  2.160247
 n =  7
 df =  7 - 1 =  6
 
-What is the theoretical mean you are testing against (called mu_0)? 3
-What is your desired confidence level? .95
-Are you doing a one-sided or two-sided test? Possible answers are 'less', 'greater', and 'two-sided'. two-sided
+What is the theoretical mean you are testing against (called mu_0)?
+  (If you only want a confidence interval, type 'NA')
+3
+What is your desired confidence level? 
+  .95
 Your t-statistic is:
   t  = (4-3)/(2.160247/sqrt(7)) = 1.224745
 
-The probability of getting this result or more extreme for xbar if mu really is 3 is
+The probability of getting this result or more extreme for xbar
+if mu really is 3 is
 p =  0.2665697
 
 You can get this result by typing:
@@ -45,54 +57,66 @@ and then calculating:
 
 
 Or, since you have the whole dataset, you could just type:
-  t.test(x,mu = 3)
-  
-  
-  
+  t.test(x,mu = 3,conf.level = 0.95)
   
   
   
 > t_test()
-Do you have a single population or are you comparing populations? Possible answers are 'single' and 'comparing'. single
-Do you have the whole dataset or do you just have the statistics (mean, standard deviation)? Possible answers are 'whole' or 'stats'. stats
-What is your sample mean? 4
-What is your sample standard deviation? 2.16
-What is your sample size? 7
-What is the theoretical mean you are testing against (called mu_0)? 3
-What is your desired confidence level? .95
-Are you doing a one-sided or two-sided test? Possible answers are 'less', 'greater', and 'two-sided'. greater
+Do you have a single population or are you comparing populations?
+ Possible answers are 'single' and 'comparing'.
+single
+Do you have the whole dataset or do you just have the statistics (mean, standard deviation)?
+ Possible answers are 'whole' or 'stats'.
+stats
+What is your sample mean? 
+ 4
+What is your sample standard deviation? 
+ 2.16
+What is your sample size? 
+ 7
+What is the theoretical mean you are testing against (called mu_0)?
+ (If you only want a confidence interval, type 'NA')
+3
+What is your desired confidence level? 
+ .95
 Your t-statistic is:
-  t  = (4-3)/(2.16/sqrt(7)) = 1.224885
+ t  = (4-3)/(2.16/sqrt(7)) = 1.224885
 
-The probability of getting this result or more extreme for xbar if mu really is 3 is
-p =  0.1332603
+The probability of getting this result or more extreme for xbar
+if mu really is 3 is
+p =  0.2665206
 
 You can get this result by typing:
-  1-pt(1.22488486623361,6)
+ 2*(1-pt(1.22488486623361,6))
 
 
 The 95\% confidence interval for the population mean is
 2.002333  < mu <  5.997667
 
 You can get this result by finding:
-  tstar = 1-qt((1-0.95)/2,6) = 2.446912
+ tstar = 1-qt((1-0.95)/2,6) = 2.446912
 
 and then calculating:
-  4 - 2.446912 x 2.16/sqrt(7)  and  4 + 2.446912 x 2.16/sqrt(7)
+ 4 - 2.446912 x 2.16/sqrt(7)  and  4 + 2.446912 x 2.16/sqrt(7)
 
 
 
 
 
 
-> x = c(1, 2, 3, 4, 5, 6, 7)
-> y = c(2.5,  5.1,  6.4,  8.4, 10.8, 13.4, 15.3)
 > t_test()
-Do you have a single population or are you comparing populations? Possible answers are 'single' and 'comparing'. comparing
-Do you have the whole dataset or do you just have the statistics (mean, standard deviation)? Possible answers are 'whole' or 'stats'. whole
-Is this a matched-pairs comparison in which the same subjects are measured twice? yes
-What is the name of the variable for the first set of measurements? x
-What is the name of the variable for the second set of measurements? y
+Do you have a single population or are you comparing populations?
+  Possible answers are 'single' and 'comparing'.
+comparing
+Do you have the whole dataset or do you just have the statistics (mean, standard deviation)?
+  Possible answers are 'whole' or 'stats'.
+whole
+Is this a matched-pairs comparison in which the same subjects are measured twice? 
+  yes
+What is the name of the variable for the first set of measurements? 
+  x
+What is the name of the variable for the second set of measurements? 
+  y
 The statistics for your datasets are: 
   n =  7
 xbar1 =  4
@@ -107,16 +131,16 @@ s =  2.445988
 n =  7
 df =  7 - 1 =  6
 
-What is your desired confidence level? .95
-Are you checking whether the mean of the second population is less, greater, or different than the mean of the first population? Possible answers are 'less', 'greater', and 'different'. greater
+What is your desired confidence level? 
+  .95
 Your t-statistic is:
   t  = 4.842857/(2.445988/sqrt(7)) = 5.238372
 
-The probability of getting this result or more extreme for xbar2 - xbar1 if mu1 really is bigger than mu2 is
-p =  0.0009707175
+The probability of getting this result or more extreme for xbar2 - xbar1 if there really is no difference is
+p =  0.001941435
 
 You can get this result by typing:
-  1-pt(5.23837230565063,6)
+  2*(1-pt(5.23837230565063,6))
 
 
 The 95\% confidence interval for the difference in population means is
@@ -130,7 +154,7 @@ and then calculating:
 
 
 Or, since you have the whole dataset, you could just type:
-  t.test(y,x,paired=TRUE,alternative='greater')
+  t.test(y,x, paired = TRUE, conf.level = 0.95)
   
   
   
@@ -138,52 +162,18 @@ Or, since you have the whole dataset, you could just type:
   
   
 > t_test()
-Do you have a single population or are you comparing populations? Possible answers are 'single' and 'comparing'. comparing
-Do you have the whole dataset or do you just have the statistics (mean, standard deviation)? Possible answers are 'whole' or 'stats'. stats
-Is this a matched-pairs comparison in which the same subjects are measured twice? yes
-What is the sample mean of the first set of measurements? 4
-What is the sample mean of the second set of measurements? 8.85
-What is the sample standard deviation of the first set of measurements? 4
-What is the sample standard deviation of the second set of measurements? 2.446
-What is the sample size? 7
-The statistics for the difference are: 
-  xbar =  4.85
-s =  4.688594
-n =  7
-df =  7 - 1 =  6
-
-What is your desired confidence level? .95
-Are you checking whether the mean of the second population is less, greater, or different than the mean of the first population? Possible answers are 'less', 'greater', and 'different'. different
-Your t-statistic is:
-  t  = 4.85/(4.688594/sqrt(7)) = 2.736832
-
-The probability of getting this result or more extreme for xbar2 - xbar1 if there really is no difference is
-p =  0.03387768
-
-You can get this result by typing:
-  2*(1-pt(2.73683180639237,6))
-
-
-The 95\% confidence interval for the difference in population means is
-0.5137735  < mu2 - mu1 <  9.186226
-
-You can get this result by finding:
-  tstar = 1-qt((1-0.95)/2,6) = 2.446912
-
-and then calculating:
-  (8.85-4) - 2.446912 x 4.688594/sqrt(7)  and  (8.85-4) + 2.446912 x 4.688594/sqrt(7)
-  
-  
-  
-  
-  
-  
-> t_test()
-Do you have a single population or are you comparing populations? Possible answers are 'single' and 'comparing'. comparing
-Do you have the whole dataset or do you just have the statistics (mean, standard deviation)? Possible answers are 'whole' or 'stats'. whole
-Is this a matched-pairs comparison in which the same subjects are measured twice? no
-What is the name of the variable for the first set of measurements? x
-What is the name of the variable for the second set of measurements? y
+Do you have a single population or are you comparing populations?
+  Possible answers are 'single' and 'comparing'.
+comparing
+Do you have the whole dataset or do you just have the statistics (mean, standard deviation)?
+  Possible answers are 'whole' or 'stats'.
+whole
+Is this a matched-pairs comparison in which the same subjects are measured twice? 
+  no
+What is the name of the variable for the first set of measurements? 
+  x
+What is the name of the variable for the second set of measurements? 
+  y
 The statistics for your datasets are: 
   n1 =  7
 xbar1 =  4
@@ -198,8 +188,8 @@ The statistics for the difference are:
 s = sqrt(2.160247^2/7 + 4.595236^2/7) = 1.919183
 df = 8.5285
 
-What is your desired confidence level? .95
-Are you checking whether the mean of the second population is less, greater, or different than the mean of the first population? Possible answers are 'less', 'greater', and 'different'. different
+What is your desired confidence level? 
+  .95
 Your t-statistic is:
   t  = (4.84285714285714)/(1.919183) = 2.523395
 
@@ -221,5 +211,5 @@ and then calculating:
 
 
 Or, since you have the whole dataset, you could just type:
-  t.test(y,x)
+  t.test(y,x, conf.level = 0.95)
 }
