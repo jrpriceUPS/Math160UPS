@@ -1,3 +1,5 @@
+#' @export
+
 BerkeleyPlots = function(){
 
 data(UCBerkeley)
