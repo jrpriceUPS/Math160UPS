@@ -12,23 +12,23 @@ This function asks you a sequence of questions in order to execute a proportion 
 \examples{
 > prop_test()
 Do you have a single population or are you comparing populations?
-  Possible answers are 'single' and 'comparing'. 
+  Possible answers are 'single' and 'comparing'.
 single
-How many trials were there in your experiment? 
+How many trials were there in your experiment?
   10
-How many successes were there? 
+How many successes were there?
   5
-The statistics for your dataset are: 
+The statistics for your dataset are:
   phat = 0.5
 s = sqrt(0.5*(1-0.5)/10) = 0.1581139
 
-What is the theoretical proportion you are testing against (called p_0)? 
+What is the theoretical proportion you are testing against (called p_0)?
   (If you only want a confidence interval, type 'NA')
 .2
-What is your desired confidence level? 
+What is your desired confidence level?
   .9
 The probability of getting this result or more extreme for phat
-if the proportion really is 0.2 is 
+if the proportion really is 0.2 is
 p =  0.0327935
 
 The 90\% confidence interval for the population proportion is
@@ -37,29 +37,29 @@ The 90\% confidence interval for the population proportion is
 
 You can get this result by typing:
   binom.test(x = 5, n = 10, p = 0.2, alternative = 'two.sided', conf.level = 0.9)
-  
-  
-  
-  
-  
-  
+
+
+
+
+
+
 > prop_test()
 Do you have a single population or are you comparing populations?
-  Possible answers are 'single' and 'comparing'. 
+  Possible answers are 'single' and 'comparing'.
 comparing
-How many trials were there in your first sample? 
+How many trials were there in your first sample?
   15
-How many successes were there in your first sample? 
+How many successes were there in your first sample?
   10
-How many trials were there in your second sample? 
+How many trials were there in your second sample?
   20
-How many successes were there in your second sample? 
+How many successes were there in your second sample?
   10
-The statistics for your dataset are: 
+The statistics for your dataset are:
   phat1 = 0.6666667
 phat2 = 0.5
 s = sqrt(0.6666667*(1-0.6666667)/15+0.5*(1-0.5)/20) = 0.1652719
-What is your desired confidence level? 
+What is your desired confidence level?
   .95
 The probability of getting this result or more extreme for phat2 - phat1
 if there really is no difference is
