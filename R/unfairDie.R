@@ -1,5 +1,4 @@
 #' @export
-#' @examples
 
 unfairDie <- function(rolls = 1){
   p = c(1,3,2,5,2,4,1)
