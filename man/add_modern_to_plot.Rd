@@ -7,5 +7,5 @@
 add_modern_to_plot(ice_core, modern_polar, modern_global)
 }
 \description{
-Adds modern temp and co2 data to ice core plot (Penny Rowe - Polar Project)
+Adds modern temp and co2 data to ice core plot (Penny Rowe - Polar project)
 }

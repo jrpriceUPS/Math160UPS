@@ -1,6 +1,6 @@
 #' Adds modern data to ice core plot
 #'
-#' Adds modern temp and co2 data to ice core plot (Penny Rowe - Polar Project)
+#' Adds modern temp and co2 data to ice core plot (Penny Rowe - Polar project)
 #' @export
 add_modern_to_plot = function(ice_core, modern_polar, modern_global) {
 
