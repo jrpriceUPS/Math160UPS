@@ -4,7 +4,7 @@
 #' @export
 add_modern_to_plot = function(ice_core, modern_polar, modern_global) {
 
-  modern_global <- get_modern_global_T_anomaly_and_co2(modern_co2, law_dome_co2)
+  modern_global <- get_modern_global_T_anomaly_and_co2(modern_co2_backup, law_dome_co2)
 
   plot(ice_core$co2, ice_core$temperature,
        ylim=c(-12, 20),
