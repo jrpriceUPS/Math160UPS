@@ -125,24 +125,24 @@ plot(modern_polar_T$DATE, modern_polar_T$TAVG, ylab='Average Temperature (Celsiu
 
 
 # # # # # #     MODERN CO2    # # # # # # #
-data(modern_co2_backup)
+data(modern_co2)
 #modern_co2 = modern_co2_backup
 #View(modern_co2)
 
 # .. What are the columns and how are they related? What's the best way to plot
 #    the data?
-plot(modern_co2_backup$year, modern_co2_backup$co2, xlab="Year", ylab = "CO2 (ppm)",
+plot(modern_co2$year, modern_co2$co2, xlab="Year", ylab = "CO2 (ppm)",
      main="Atmospheric CO2 Concentration from 1958-2020")
-plot(modern_co2_backup$year, modern_co2_backup$co2, xlab="Year", ylab = "CO2 (ppm)",
+plot(modern_co2$year, modern_co2$co2, xlab="Year", ylab = "CO2 (ppm)",
      main="Atmospheric CO2 Concentration from 1958-2020", type = "l")
-plot(modern_co2_backup$decimal_date, modern_co2_backup$co2, xlab="Year", ylab = "CO2 (ppm)",
+plot(modern_co2$decimal_date, modern_co2$co2, xlab="Year", ylab = "CO2 (ppm)",
      main="Atmospheric CO2 Concentration from 1958-2020", col="red", type = "l")
 
 
 # # # # # #     Temperature vs CO2 in modern times    # # # # # # #
 
 # .. Get T and co2 on the same year grid
-modern_polar <- get_modern_polar_T_and_co2_on_same_grid(modern_polar_T, modern_co2_backup)
+modern_polar <- get_modern_polar_T_and_co2_on_same_grid(modern_polar_T, modern_co2)
 
 # .. Plot CO2 and T concentration as a function of year
 plot_timeseries_modern_co2_and_T(modern_polar)
