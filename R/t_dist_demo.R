@@ -1,3 +1,6 @@
+#' T Test Demo
+#'
+#' This function allows me to run a demo to illustrate the need for a non-normal t-distribution for small samples.
 #' @export
 
 t_dist_demo = function(n = 4,samples = 10000){

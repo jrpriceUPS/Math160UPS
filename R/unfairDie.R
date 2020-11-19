@@ -1,3 +1,6 @@
+#' Unfair Die
+#'
+#' Rolls an unfair 7 sided die for a project.
 #' @export
 
 unfairDie <- function(rolls = 1){

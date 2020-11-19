@@ -1,3 +1,6 @@
+#' Ice Core Timeseries
+#'
+#' Plots simultaneous time series for ice core data.
 #' @export
 plot_timeseries_ice_core_co2_and_T = function(ice_core_co2, ice_core_T) {
 

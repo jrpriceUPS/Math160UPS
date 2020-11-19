@@ -1,3 +1,6 @@
+#' Read CO2
+#'
+#' This function loads CO2 data from a website (Penny Rowe - polar activity).
 #' @export
 read_co2_url <- function(co2_website) {
   modern_co2 <- readr::read_delim(co2_website,

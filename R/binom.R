@@ -2,6 +2,7 @@
 #'
 #' This function allows to compute quantities relating to binomial distributions and visualize the results clearly.
 #' @export
+#' @examples
 #'
 #' > binom()
 #' How many trials are there in your binomial experiment? 13

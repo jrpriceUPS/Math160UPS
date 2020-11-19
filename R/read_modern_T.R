@@ -1,3 +1,6 @@
+#' Read modern temperature
+#'
+#' Function to load modern temperature data.
 #' @export
 read_modern_T <- function(modern_T_website){
   modern_T  <- read.delim(modern_T_website,

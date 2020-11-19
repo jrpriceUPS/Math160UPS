@@ -1,3 +1,6 @@
+#' Get Modern CO2
+#'
+#' Loads modern CO2 data from website (Penny Rowe - Polar Project)
 #' @export
 get_modern_co2 <- function() {
   # .. Get the modern CO2 data from the NOAA website

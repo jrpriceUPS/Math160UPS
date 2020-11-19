@@ -1,3 +1,6 @@
+#' Put Ice Core Data on same grid
+#'
+#' Puts modern ice core temp and co2 data on the same time grid (Penny Rowe - Polar project)
 #' @export
 get_ice_core_T_and_co2_on_same_grid = function(ice_core_co2, ice_core_T) {
   # .. Next we will look at temperature and CO2 in ice core records

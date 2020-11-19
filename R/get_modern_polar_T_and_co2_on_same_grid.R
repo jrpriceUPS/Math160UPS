@@ -1,3 +1,6 @@
+#' Get Same Grid for Polar Data
+#'
+#' Places polar temperature and CO2 data on same time grid.
 #' @export
 get_modern_polar_T_and_co2_on_same_grid <- function(modern_polar_T, modern_co2) {
   # # #    TEMPERATURE VS CO2 in modern times  # # #

@@ -1,3 +1,6 @@
+#' Modern Anomaly Data
+#'
+#' Loads modern temperature anomaly and CO2 data (Penny Rowe - Polar Project)
 #' @export
 get_modern_global_T_anomaly_and_co2 <- function(modern_co2m, law_dome_co2) {
   website_modern_T <- "https://data.giss.nasa.gov/gistemp/graphs/graph_data/Global_Mean_Estimates_based_on_Land_and_Ocean_Data/graph.txt"

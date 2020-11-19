@@ -1,3 +1,6 @@
+#' Berkeley Plots
+#'
+#' Plots visualizations of Berkeley data from first day of class
 #' @export
 
 BerkeleyPlots = function(){

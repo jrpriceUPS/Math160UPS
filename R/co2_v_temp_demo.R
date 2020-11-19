@@ -1,3 +1,6 @@
+#' Polar Demo
+#'
+#' Runs everything in the polar activity to make sure it works
 #' @export
 co2_v_temp_demo = function(){
 #

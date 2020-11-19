@@ -1,4 +1,8 @@
+#' try_read_url
+#'
+#' A function by Penny Rowe to try URL reading for polar project
 #' @export
+
 try_read_url <- function(website, reader, backup) {
   out <- tryCatch(
     {

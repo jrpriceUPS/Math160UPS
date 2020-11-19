@@ -1,3 +1,6 @@
+#' Plot Modern Timeseries
+#'
+#' Plots simultaneous timeseries of CO2 and temperature (Penny Rowe - Polar project).
 #' @export
 plot_timeseries_modern_co2_and_T = function(df) {
   # Plot co2 and T as timeseries on the same graph
