@@ -7,6 +7,7 @@
 
 update_code <- function(){
   library(devtools)
+  detach("package:Math160UPS", unload = TRUE)
   install_github("jrpriceUPS/Math160UPS")
   .rs.restartR()
   library("Math160UPS")
