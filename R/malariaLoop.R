@@ -1,3 +1,9 @@
+#' Update Code to Latest Version
+#'
+#' This function updates your library to the newest version and sets those to become available.
+#' @export
+#' > marlariaLoop()
+
 data(malaria)
 
 obs = 5/14 - 6/6
