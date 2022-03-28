@@ -27,16 +27,16 @@ confint_activity <- function(n = 20,numstudents = "N",conf = .95,section_name = 
   if(numstudents != "N"){
 
     data(students)
-    coffee = droplevels(subset(students,Coffee == "Yes" | Coffee == "No"))$Coffee
+    coffee = subset(students,Coffee == "Yes" | Coffee == "No")$Coffee
 
-    myPropTable = prop.table(table(coffee))
+    myPropTable = prop.table(table(coffee,exclude = c("")))
     trueP = myPropTable[2]
 
     list = rep(0,numstudents)
     for (i  in 1:numstudents){
 
       current = prop.table(table(sample(coffee,n)))
-      list[i] = current[2]
+      list[i] = 1-current[1]
 
     }
 
@@ -50,5 +50,4 @@ confint_activity <- function(n = 20,numstudents = "N",conf = .95,section_name = 
     cat(paste(toString(percent),"% of students created a confidence interval that included the actual proportion of ",toString(round(myPropTable[2],6)),".\n",sep=""))
 
   }
-
 }
