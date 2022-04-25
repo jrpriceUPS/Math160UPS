@@ -13,9 +13,9 @@ This function allows you to find and plot the residuals from a linear fit of two
 > x = c(1,2,3,4,5,6,7)
 > y = c(2.5,5.1,6.4,8.4,10.8,13.4,15.3)
 > find_residuals()
-What is the name of the list with your x variable? 
+What is the name of the list with your x variable?
   x
-What is the name of the list with your y variable? 
+What is the name of the list with your y variable?
   y
 The best fit line for these data is:
   y = 2.12142857142857 x (x) + 0.357142857142856
@@ -26,11 +26,11 @@ You can find the residuals by saving the model:
 
 and then typing:
   resid(model)
-1           2           3           4           5           6           7 
-0.02142857  0.50000000 -0.32142857 -0.44285714 -0.16428571  0.31428571  0.09285714 
+1           2           3           4           5           6           7
+0.02142857  0.50000000 -0.32142857 -0.44285714 -0.16428571  0.31428571  0.09285714
 
 
-To plot them, you first need to remove all NAs from x and y 
+To plot them, you first need to remove all NAs from x and y
 (beyond the scope of this course), then type:
   plot(x,resid(model))
 }
