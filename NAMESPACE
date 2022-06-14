@@ -3,6 +3,7 @@
 export(BerkeleyPlots)
 export(add_modern_to_plot)
 export(binom)
+export(cancerTable)
 export(chi_test)
 export(co2_v_temp_demo)
 export(conduct_t_test)
