@@ -61,8 +61,14 @@ linreg <- function(){
   abline(regress)
 
   cat("\n")
+
+
+  print(summary(regress))
+
   cat("\n")
   cat("\n")
+  cat("\n")
+
   cat(paste("You can plot these data by typing:"))
   cat("\n")
   cat(paste("plot(",varname1,",",varname2,")",sep=""))
@@ -81,6 +87,9 @@ linreg <- function(){
   cat(paste("and then adding it to the plot:"))
   cat("\n")
   cat("abline(model)")
-
-
+  cat("\n")
+  cat(paste("You can see the regression summary by typing:"))
+  cat("\n")
+  cat("\n")
+  cat(paste("summary(lm(",varname2,"~",varname1,"))",sep=""))
 }
