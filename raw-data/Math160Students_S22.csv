@@ -1,0 +1,93 @@
+Section,Class,HSGPA,UPSGPA,SATM,SATR,SATW,ACT,Gender,Height,ShoeSz,HSState,PublPrivic,BirthMonth,Handedness,Units,Shower,Sleep,Work,Study,Exercise,ComputerHrs,VarAthlete,FinAid,TxtbkAmt,TxtbkPerc,Diet,Coffee,Computer,Phone,States,Siblings,NumShoes,AgeElderParent,AgeYoungerParent,Salary,Major
+B,FirstYear,3.89,3.33,,,,,Female,64,9.5,Oregon,Public,December,Ambidextrous (Both),3,7,8,0,5,10,9,Yes,Yes,26,100,NoPref,No,Mac,iPhone,3,1,10,51,50,55000,Business
+,FirstYear,3.2,3.4,,,,,Male,72,11,Washington,Private,October,Right,4.5,15,8,12,21,14,20,Yes,No,150,20,NoPref,No,Mac,iPhone,8,0,20,50,41,100000,Science
+D,Junior,3.5,3.5,,,,24,Female,63,8,Utah,Public,February,Right,4,10,7,40,10,5,,No,Yes,350,100,Veg,Yes,PC,iPhone,17,4,10,51,47,60000,Science
+A,FirstYear,3.98,,,,,,Female,68,11,Oregon,Private,May,Right,4,10,8,0,15,3,10,No,Yes,270,85,Veg,No,Mac,iPhone,25,1,6,52,52,50000,UND
+D,Sophomore,3.74,3.64,,,,33,Female,63,7,Minnesota,Public,March,Right,4.75,7,8,12,20,18,20,Yes,Yes,70,100,NoPref,Yes,Mac,iPhone,18,1,15,46,42,60000,SocSci
+D,Sophomore,3.5,3.4,590,550,550,,Male,72,11.5,Oregon,Public,March,Right,4.5,18,7,9,14,11,10,Yes,Yes,35,50,NoPref,No,PC,Android,7,1,5,50,50,60000,Science
+,FirstYear,4,3.8,,,,,Male,68,10,California,Private,August,Right,4.25,10,8,,10,8,30,Yes,Yes,160,60,NoPref,No,PC,iPhone,14,1,3,59,50,80000,SocSci
+D,Senior,3.7,3.4,680,590,,,Female,64,8,Washington,Public,January,Right,16,15,6,24,15,6,5,No,Yes,0,0,NoPref,Yes,PC,iPhone,5,0,20,46,45,100000,Science
+D,FirstYear,3.74,3.7,,,,,Female,55,8,Washington,Public,May,Left,4,20,6,14,10,2,6,No,Yes,135,100,NoPref,Yes,Mac,iPhone,5,7,7,61,59,35,SocSci
+B,Junior,3.4,2,,,,,Female,64,6.5,Washington,Private,February,Right,4.25,45,7,,15,0,25,No,Yes,300,100,NoPref,No,Mac,iPhone,3,4,12,40,39,100000,Science
+F,Sophomore,3.8,2.4,,,,,Male,75,11.5,California,Public,June,Right,4,15,7,0,20,7,15,No,Yes,,,Veg,No,Mac,iPhone,16,1,4,66,56,60000,Humanities
+B,FirstYear,3.9,3.7,,,,26,Female,66,7,Colorado,Public,September,Right,4.5,10,6,10,15,15,4,Yes,Yes,300,,Other,No,Mac,iPhone,,5,,54,42,,SocSci
+B,Sophomore,3.9,3.2,,,,,Male,72,11.5,Washington,Public,October,Right,3.5,10,8,15,15,15,25,No,Yes,300,100,NoPref,Yes,Mac,iPhone,25,1,17,54,53,85000,Science
+D,Junior,4,3.4,,,,,Female,65,10,Colorado,Public,April,Right,4.25,20,8,9,50,2,40,No,Yes,,,Veg,No,Mac,iPhone,,,,,,,Science
+,FirstYear,3,4,550,620,,,Female,70,8,California,Private,December,Ambidextrous (Both),4,15,5,0,15,10,10,Yes,Yes,120,100,NoPref,Yes,Mac,iPhone,15,3,12,54,49,150000,SocSci
+,FirstYear,3.2,2.9,600,500,400,,Male,74,11.5,California,Private,October,Right,4,10,7,9,15,9,7,No,Yes,110,100,NoPref,No,Mac,iPhone,11,1,5,51,50,75000,UND
+D,Junior,3.5,3.42,,,,32,Female,66,8.5,Alaska,Public,June,Left,4,15,9,0,7,0,30,No,Yes,310,75,NoPref,No,Mac,iPhone,12,2,13,55,54,35000,Business
+F,Sophomore,3.7,3.4,,,,,Female,62,7.5,Washington,Public,September,Right,5,20,8,11,20,1,15,No,Yes,150,25,NoPref,Yes,Other,Android,14,0,7,53,52,80000,SocSci
+B,Sophomore,3.7,3.5,650,700,,,DNI,67,7.5,California,Public,September,Right,4.25,15,8,20,0,30,25,Yes,Yes,120,100,NoPref,No,PC,iPhone,15,2,8,59,54,50000,Humanities
+B,FirstYear,4,3.72,,,,34,Male,71,11.5,Oregon,Public,June,Right,4,5,8,12,35,40,21,Yes,Yes,100,0,NoPref,Yes,PC,iPhone,3,1,25,50,49,90000,Business
+F,FirstYear,3.56,3,,,,,Female,68,8.5,Washington,Public,December,Left,4,35,7,0,5,2,40,No,Yes,145,100,NoPref,No,PC,iPhone,5,1,9,53,48,62906,Science
+E,FirstYear,3.7,3.6,,,,,Female,67,9.5,Washington,Private,August,Right,4,,7,,15,11,5,Yes,Yes,70,75,Other,No,PC,iPhone,,1,6,,,,UND
+D,Sophomore,,,,,,,DNI,65,8,California,Public,October,Left,,20,7,,,,,No,Yes,,,NoPref,No,PC,iPhone,,2,,44,44,,SocSci
+F,FirstYear,3.84,3.78,590,650,,,Male,77,13,Oregon,Private,August,Right,3.75,7,7,0,18,10,6,Yes,Yes,80,100,NoPref,No,PC,Android,14,1,3,68,65,40000,UND
+E,FirstYear,4,3.3,,,,,Female,65,7.5,California,Public,September,Right,4.5,15,7,10,16,14,2,Yes,Yes,245,100,NoPref,No,Mac,iPhone,4,1,8,62,50,55000,UND
+E,FirstYear,3.9,3.9,590,,,,Female,62,8,Washington,Public,December,Right,,8,6,0,7,10,2,Yes,Yes,95,100,NoPref,No,PC,iPhone,8,3,10,53,50,,Humanities
+D,Junior,3.6,3.5,,,,32,Female,64,7,Illinois,Public,June,Right,4.5,25,7,12,10,3,10,No,Yes,0,0,NoPref,No,Mac,iPhone,21,1,13,60,0,85000,Humanities
+E,FirstYear,4,3.92,,,,,Male,67,8,Alaska,Public,November,Right,4.75,20,8,9,3,,20,No,Yes,38,100,Other,No,PC,iPhone,7,2,10,53,48,,Fine Arts
+,Sophomore,3.96,3.3,610,600,,,Male,68,10,Oregon,Public,May,Right,4,8,8,10,6,18,4,Yes,Yes,45,25,NoPref,No,Mac,iPhone,8,1,4,47,46,60000,Business
+F,FirstYear,4,3.34,,,,26,Male,71,11.5,California,Private,July,Right,4,10,7,10,14,14,35,Yes,Yes,0,0,NoPref,No,Mac,iPhone,4,4,8,32,30,40000,UND
+A,FirstYear,3.8,3.4,,,,21,Male,69,10.5,California,Public,December,Right,4,15,7,10,10,10,4,No,Yes,0,100,NoPref,No,Mac,iPhone,10,3,13,50,47,60000,Business
+D,FirstYear,3.7,3.2,670,630,,,Male,71,11.5,Washington,Public,October,Left,3,5,4,15,5,12,3,No,Yes,70,100,NoPref,No,PC,Android,7,3,7,46,42,75000,Science
+F,FirstYear,3.96,3.59,,,,,Male,74,15,Oregon,Public,February,Right,4,10,7,5,8,12,10,Yes,Yes,140,100,NoPref,No,PC,Android,4,1,11,53,42,35000,UND
+A,FirstYear,3.88,3.92,,,,,Female,66,7.5,Texas,Public,December,Left,4,20,7,8,6,1,7,No,Yes,300,60,NoPref,Yes,PC,iPhone,20,1,8,55,53,70000,Fine Arts
+A,FirstYear,3.4,2.7,600,,,,Male,70,10,Colorado,Public,February,Right,4,7,7,0,10,8,10,Yes,Yes,45,100,NoPref,No,PC,iPhone,7,1,8,45,42,80000,Science
+,FirstYear,3.6,2.7,,,,,Male,75,12,California,Public,March,Right,4,15,6,0,4,1,4,No,Yes,200,100,NoPref,No,Mac,iPhone,7,1,3,64,57,50000,UND
+E,FirstYear,4,4,600,600,600,,Female,65,8,Utah,Public,October,Right,4.75,25,8,10,20,3,25,No,Yes,95,75,Veg,No,Mac,iPhone,25,1,15,52,52,,Science
+B,FirstYear,3.2,2.8,,,,,Male,76,13,Washington,Public,October,Right,4.5,10,11,,,,,Yes,No,90,35,,No,Mac,iPhone,22,1,24,53,52,90,Business
+B,FirstYear,3.9,2.9,,,,,Female,66,7,California,Public,November,Right,4.5,50,8,7,15,0,20,No,Yes,0,100,Veg,No,Mac,iPhone,4,1,12,50,49,500000,Business
+B,FirstYear,4,,770,760,,,Male,78,12,Colorado,Public,June,Right,4,10,7,0,12,8,5,No,Yes,200,100,NoPref,Yes,Mac,iPhone,20,1,8,52,50,75000,Business
+B,FirstYear,4,3.7,,,,32,Male,75,11,Oklahoma,Public,July,Right,4,10,7,0,10,8,8,Yes,Yes,87,50,NoPref,No,PC,iPhone,34,4,8,48,48,100000,Business
+B,FirstYear,3.7,3.5,670,590,,,Male,73,11,Washington,Public,June,Right,4,5,7,0,30,35,20,Yes,Yes,350,100,NoPref,Yes,Mac,iPhone,15,1,8,58,56,75000,Business
+B,FirstYear,4,3.83,,,,20,Female,69,9,Colorado,Public,November,Right,4,15,9,0,5,15,4,Yes,Yes,85,95,,No,Mac,iPhone,,1,14,52,49,,SocSci
+F,FirstYear,4,3.92,,,,,Female,56,8.5,California,Public,October,Right,4.5,15,9,0,25,18,4,Yes,Yes,60,100,Veg,No,Mac,iPhone,4,2,7,47,45,,Science
+,FirstYear,3.89,3.68,,,,,Female,67,8.5,Oregon,Public,January,Right,4.75,10,6,8,12,12,5,Yes,Yes,167,100,NoPref,Yes,Other,iPhone,7,3,30,57,57,25000,Business
+F,FirstYear,3.5,3.3,,,,,Female,68,9,Washington,Public,December,Right,4,15,7,8,5,1,3,No,Yes,20,100,NoPref,No,PC,iPhone,3,1,6,53,53,,SocSci
+F,FirstYear,3.8,,620,,,,Female,64,7,California,Public,December,Right,4,15,7,0,12,13,8,Yes,Yes,120,100,Veg,No,Mac,iPhone,8,1,12,53,50,70000,SocSci
+F,FirstYear,3.68,3.1,,,,,Female,64,8,Washington,Public,October,Right,4.75,15,9,12,14,2,10,No,Yes,0,0,Veg,No,Mac,iPhone,11,3,,38,38,,Fine Arts
+D,FirstYear,3.8,3.75,,,,,Female,66,7.5,Oregon,Public,May,Right,4,20,7,,6,9,25,Yes,Yes,50,50,NoPref,No,Mac,iPhone,8,1,15,53,48,60000,SocSci
+B,FirstYear,3.6,3,,,,,Male,70,10,California,Public,January,Right,5,20,8,9,20,9,,Yes,Yes,300,100,NoPref,No,Mac,iPhone,10,3,5,50,43,200,Business
+D,FirstYear,4,3,,,,27,Female,64,8,Oregon,Public,April,Right,,15,8,8,10,20,8,Yes,Yes,200,90,NoPref,No,PC,iPhone,17,1,22,43,42,70000,Science
+F,FirstYear,3.9,3.8,570,700,,,Female,,10.5,Oregon,Public,March,Right,4.25,20,7,9,3,4,,No,Yes,100,100,NoPref,No,Other,iPhone,8,1,5,61,55,,UND
+F,FirstYear,,,,,,,DNI,63,,California,Private,February,Right,,,4,,,,,No,Yes,,,NoPref,No,PC,iPhone,,4,,,,,SocSci
+D,Senior,3.8,3.64,580,,,,Female,66,7.5,Washington,Public,January,Right,3,15,6,12,30,0,5,No,Yes,250,100,Other,No,Mac,iPhone,12,3,6,45,42,50000,Science
+D,FirstYear,3.7,3.2,,,,,Female,65,8,Washington,Public,February,Right,4 and quarter ,10,8,,10,14,,Yes,Yes,150,80,NoPref,No,Mac,iPhone,17,0,30,58,56,,Science
+D,FirstYear,3.7,3.7,,,,,Female,63,6.5,Outside the U.S.,Private,September,Right,4,10,5,15,13,8,6,No,Yes,100,100,NoPref,Yes,Mac,iPhone,4,2,5,58,44,1500,SocSci
+D,Sophomore,3.54,3.57,,,,,Female,65,7,California,Public,November,Right,4.75,10,7,9,9,3,9,No,Yes,45,100,NoPref,Yes,Mac,iPhone,10,2,10,46,46,60,Fine Arts
+B,FirstYear,4,3,610,324,376,,DNI,70,11,California,Public,October,Right,4.25,20,6,12,7,4,15,No,Yes,300,100,Veg,Yes,Mac,iPhone,11,6,12,43,42,40000,Business
+B,FirstYear,3.78,,,,,,Male,71,12,Colorado,Public,June,Right,4,12,8,4,15,14,0,Yes,Yes,120,100,NoPref,No,Mac,iPhone,16,3,6,50,50,50001,Business
+B,FirstYear,4,3.83,,,,,Male,72,10.5,Washington,Public,July,Right,,5,7,0,15,10,10,Yes,Yes,,100,NoPref,Yes,PC,iPhone,,1,7,75,54,90000,Business
+,Senior,3.86,3.61,,,,,Female,63,8.5,California,Public,October,Right,5,20,6,13,30,3,0,No,Yes,46,20,NoPref,No,Mac,iPhone,13,3,15,61,56,55000,SocSci
+A,FirstYear,,,,,,,Female,67,8.5,Texas,Public,May,Right,4.25,15,8,,,,,No,Yes,,,NoPref,Yes,Mac,iPhone,,1,15,52,51,,Science
+F,FirstYear,,3.24,,,,,Male,78,14,Outside the U.S.,Private,April,Right,5,15,10,,18,12,5,No,Yes,,,NoPref,Yes,Mac,iPhone,,0,,59,58,,UND
+F,FirstYear,4,4,,,,,Female,62,7.5,Oregon,Public,October,Right,3,20,7,8,15,2,10,No,Yes,300,100,NoPref,Yes,Mac,iPhone,8,3,7,55,53,35,SocSci
+F,FirstYear,,3.55,,,,27,Female,61,7.5,Colorado,Public,February,Right,3,7,6,,,,,No,Yes,65,100,NoPref,Yes,Other,iPhone,10,2,,55,54,,SocSci
+D,Sophomore,3.95,3.97,,,,34,DNI,69,11.5,California,Public,October,Right,4,10,8,7,9,6,28,No,Yes,205,100,NoPref,Yes,Mac,iPhone,5,1,7,65,57,,Humanities
+A,FirstYear,3.8,2,,,,,Female,68,10,Washington,Public,May,Right,5,20,6,12,2,4,6,Yes,Yes,250,100,NoPref,No,Chromebook,iPhone,5,0,20,55,48,90000,SocSci
+D,Sophomore,3.83,2.3,,,,,Male,68,11,California,Public,August,Right,4,15,5,9,24,24,5,Yes,Yes,300,100,NoPref,Yes,PC,iPhone,9,7,9,45,39,45000,Science
+D,Sophomore,4,3.85,,,,31,Female,65,8,New Mexico,Private,April,Right,4,20,8,10,20,8,15,No,Yes,40,0,Other,Yes,Mac,iPhone,10,3,15,45,42,,SocSci
+F,FirstYear,3.7,,,,,,Female,61,7,Washington,Public,August,Right,4,15,8,10,20,4,40,No,Yes,300,100,Veg,No,Other,Android,10,5,20,57,57,50000,Humanities
+F,FirstYear,3.5,,,,,,Male,75,12,Washington,Private,June,Right,3,15,4,40,15,5,60,No,Yes,45,50,NoPref,Yes,Mac,iPhone,10,2,5,57,52,50000,Science
+D,Sophomore,3.7,3.2,,,,,Female,69,8.5,Washington,Public,June,Right,4,10,7,,16,15,,Yes,Yes,200,,NoPref,Yes,Mac,iPhone,,1,,52,52,,
+,Senior,,,,,,,DNI,,9.5,,Public,December,Right,,60,8,9,8,0,,No,Yes,,60,NoPref,Yes,Chromebook,iPhone,4,0,30,56,46,,Humanities
+D,Sophomore,3.8,3.9,,,,,Female,62,6.5,California,Private,June,Left,4,15,8,,3,6,6,No,Yes,197,,NoPref,Yes,Mac,iPhone,15,1,12,55,52,80000,Fine Arts
+E,FirstYear,3.7,4,,,,34,Female,63,7.5,Washington,Public,November,Right,4,30,8,,10,4,30,No,Yes,67,100,NoPref,No,Other,Android,18,2,11,57,52,,Humanities
+D,FirstYear,3.5,3.6,,,,,Male,,10.5,California,Private,August,Ambidextrous (Both),4,8,9,3,5,5,9,Yes,Yes,110,100,NoPref,No,Mac,iPhone,7,1,4,62,62,100000,UND
+D,Sophomore,,,,,,,Male,69,11,California,Private,May,Right,,,,,,,,No,No,,,NoPref,No,Mac,iPhone,5,0,10,62,61,,SocSci
+A,FirstYear,3.35,3.2,,,,,DNI,74,11,Minnesota,Public,November,Right,4,15,7,0,6,0,4,No,Yes,250,80,NoPref,Yes,Mac,iPhone,35,5,18,58,57,10,UND
+F,FirstYear,3.2,2.3,,,,,Female,62,6.5,California,Public,February,Right,4,30,7,8,5,9,12,No,Yes,,,NoPref,No,Mac,iPhone,,,,,,,SocSci
+B,FirstYear,3.95,3.7,,,,,Male,72,11,Washington,Public,March,Right,4,5,10,0,12,14,20,Yes,Yes,300,80,NoPref,No,PC,iPhone,26,1,12,48,47,110000,Business
+A,FirstYear,4,3.4,,,,,DNI,62,8,California,Public,June,Left,4.25,20,6,9,7,3,5,No,Yes,80,100,NoPref,Yes,Mac,iPhone,7,3,7,39,39,,Fine Arts
+F,Junior,3,2.8,280,340,340,,Female,64,7.5,Washington,Private,September,Left,4.25,10,8,20,15,8,17,No,Yes,65,50,NoPref,Yes,Mac,iPhone,8,4,18,60,60,30,Science
+E,FirstYear,4,3.92,580,340,330,,DNI,60,6.5,Oregon,Public,January,Right,4.75,5,7,0,15,5,25,No,Yes,260,90,NoPref,No,Mac,iPhone,13,1,14,65,53,,Fine Arts
+D,FirstYear,4,3.2,,,,,Female,58,3,Oregon,Public,July,Right,,20,6,8,20,12,5,Yes,Yes,20,,Veg,Yes,Mac,iPhone,5,2,10,52,49,80000,Science
+B,FirstYear,3.4,,,,,,Male,72,11,Washington,Public,December,Right,4,10,7,,5,12,10,Yes,Yes,300,75,NoPref,No,Mac,iPhone,8,2,10,55,55,,Business
+,FirstYear,3.96,3.85,,,,,Male,74,11.5,Washington,Public,November,Right,3.75,5,8,3,3,16,8,Yes,Yes,140,0,NoPref,Yes,Mac,iPhone,11,1,45,45,45,80000,Business
+D,Sophomore,4,3.4,,,,22,Female,63,6.5,Oregon,Public,April,Right,4.25,30,7,10,16,6,30,No,Yes,20,100,NoPref,No,Mac,iPhone,8,2,15,54,54,60000,Science
+D,Junior,3.3,3.1,650,750,,,Male,71,11,Washington,Public,March,Right,4.25,10,7,20,6,12,25,No,Yes,71,100,NoPref,No,Mac,iPhone,30,0,10,53,51,500000,SocSci
+F,FirstYear,3.6,3.2,,,,,Male,82,15,California,Public,April,Right,4,20,7,11,10,4,8,No,Yes,125,100,NoPref,Yes,PC,iPhone,8,2,6,60,57,,Business
+D,FirstYear,3.85,3.58,,,,,Female,67,10,New Mexico,Private,August,Right,4,30,7,0,15,4,10,No,Yes,250,80,NoPref,No,Mac,iPhone,10,0,15,53,51,0,Science
+D,FirstYear,3.84,,670,650,650,,Male,66,7.5,Washington,Private,October,Right,4,15,7,0,4,1,6,No,Yes,250,0,NoPref,No,PC,iPhone,6,1,3,55,51,70000,Business
+F,FirstYear,3.2,2.9,,,,,Male,71,13,California,Public,December,Right,4.75,,,,,,,,,,,,,,iPhone,,,,,,,
