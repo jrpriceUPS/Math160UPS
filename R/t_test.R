@@ -256,7 +256,7 @@ t_test <- function(){
 
         if(grepl("$", varname1, fixed=TRUE)){
           names = strsplit(varname1,"\\$")
-          frame = get(names[[1]])
+          frame = get(names[[1]][1])
           data1 = frame[[names[[1]][2]]]
         } else{
           data1 = get(varname1)}
@@ -399,7 +399,7 @@ t_test <- function(){
       varname = readline()
       if(grepl("$", varname, fixed=TRUE)){
         names = strsplit(varname,"\\$")
-        frame = get(names[[1]])
+        frame = get(names[[1]][1])
         data = frame[[names[[1]][2]]]
       } else{
         data = get(varname)}
