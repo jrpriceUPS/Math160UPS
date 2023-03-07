@@ -11,9 +11,9 @@ This function asks you a sequence of questions in order to execute a t-test. It 
 }
 \examples{
 
-  
-  
-  
+
+
+
 > x = c(1, 2, 3, 4, 5, 6, 7)
 > t_test()
 Do you have a single population or are you comparing populations?
@@ -22,9 +22,9 @@ single
 Do you have the whole dataset or do you just have the statistics (mean, standard deviation)?
   Possible answers are 'whole' or 'stats'.
 whole
-What is the name of your variable? 
+What is the name of your variable?
   x
-The statistics for your dataset are: 
+The statistics for your dataset are:
   xbar =  4
 s =  2.160247
 n =  7
@@ -33,7 +33,7 @@ df =  7 - 1 =  6
 What is the theoretical mean you are testing against (called mu_0)?
   (If you only want a confidence interval, type 'NA')
 3
-What is your desired confidence level? 
+What is your desired confidence level?
   .95
 Your t-statistic is:
   t  = (4-3)/(2.160247/sqrt(7)) = 1.224745
@@ -58,9 +58,9 @@ and then calculating:
 
 Or, since you have the whole dataset, you could just type:
   t.test(x,mu = 3,conf.level = 0.95)
-  
-  
-  
+
+
+
 > t_test()
 Do you have a single population or are you comparing populations?
  Possible answers are 'single' and 'comparing'.
@@ -68,16 +68,16 @@ single
 Do you have the whole dataset or do you just have the statistics (mean, standard deviation)?
  Possible answers are 'whole' or 'stats'.
 stats
-What is your sample mean? 
+What is your sample mean?
  4
-What is your sample standard deviation? 
+What is your sample standard deviation?
  2.16
-What is your sample size? 
+What is your sample size?
  7
 What is the theoretical mean you are testing against (called mu_0)?
  (If you only want a confidence interval, type 'NA')
 3
-What is your desired confidence level? 
+What is your desired confidence level?
  .95
 Your t-statistic is:
  t  = (4-3)/(2.16/sqrt(7)) = 1.224885
@@ -111,13 +111,13 @@ comparing
 Do you have the whole dataset or do you just have the statistics (mean, standard deviation)?
   Possible answers are 'whole' or 'stats'.
 whole
-Is this a matched-pairs comparison in which the same subjects are measured twice? 
+Is this a matched-pairs comparison in which the same subjects are measured twice?
   yes
-What is the name of the variable for the first set of measurements? 
+What is the name of the variable for the first set of measurements?
   x
-What is the name of the variable for the second set of measurements? 
+What is the name of the variable for the second set of measurements?
   y
-The statistics for your datasets are: 
+The statistics for your datasets are:
   n =  7
 xbar1 =  4
 s1 =  2.160247
@@ -125,13 +125,13 @@ s1 =  2.160247
 xbar2 =  8.842857
 s2 =  4.595236
 
-The statistics for the difference are: 
+The statistics for the difference are:
   xbar =  4.842857
 s =  2.445988
 n =  7
 df =  7 - 1 =  6
 
-What is your desired confidence level? 
+What is your desired confidence level?
   .95
 Your t-statistic is:
   t  = 4.842857/(2.445988/sqrt(7)) = 5.238372
@@ -155,12 +155,12 @@ and then calculating:
 
 Or, since you have the whole dataset, you could just type:
   t.test(y,x, paired = TRUE, conf.level = 0.95)
-  
-  
-  
-  
-  
-  
+
+
+
+
+
+
 > t_test()
 Do you have a single population or are you comparing populations?
   Possible answers are 'single' and 'comparing'.
@@ -168,13 +168,13 @@ comparing
 Do you have the whole dataset or do you just have the statistics (mean, standard deviation)?
   Possible answers are 'whole' or 'stats'.
 whole
-Is this a matched-pairs comparison in which the same subjects are measured twice? 
+Is this a matched-pairs comparison in which the same subjects are measured twice?
   no
-What is the name of the variable for the first set of measurements? 
+What is the name of the variable for the first set of measurements?
   x
-What is the name of the variable for the second set of measurements? 
+What is the name of the variable for the second set of measurements?
   y
-The statistics for your datasets are: 
+The statistics for your datasets are:
   n1 =  7
 xbar1 =  4
 s1 =  2.160247
@@ -183,12 +183,12 @@ n2 =  7
 xbar2 =  8.842857
 s2 =  4.595236
 
-The statistics for the difference are: 
+The statistics for the difference are:
   xbar =  4.842857
 s = sqrt(2.160247^2/7 + 4.595236^2/7) = 1.919183
 df = 8.5285
 
-What is your desired confidence level? 
+What is your desired confidence level?
   .95
 Your t-statistic is:
   t  = (4.84285714285714)/(1.919183) = 2.523395

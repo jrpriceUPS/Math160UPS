@@ -66,8 +66,14 @@
 #'   prop.test(c(10,10), c(20,15), alternative = 'two.sided', conf.level = 0.95)
 
 prop_test <- function(){
-  cat("Do you have a single population or are you comparing populations?\nPossible answers are 'single' and 'comparing'. \n")
+  cat("Are you executing a one-sample proportion test or a two-sample proportion test?\nPossible answers are 'one' and 'two'.\n")
   compare = readline()
+  while(!(compare %in% c('one','1','One','two','2','Two'))){
+    cat("Please choose either 'one' or 'two'.\n")
+    compare = readline()
+  }
+  if(compare %in% c('one','1','One')){compare = "single"}
+  if(compare %in% c('two','2','Two')){compare = "comparing"}
 
   if(compare=="comparing"){
     cat("How many trials were there in your first sample? \n")

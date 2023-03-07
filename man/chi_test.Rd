@@ -53,7 +53,7 @@ if there really is no relationship is
 p =  0.03672565
 
 You can get this result by:
-  
+
   Inputting the data in the table in a list that goes column-by-column:
   data  = c(10,9,8,5,6,19)
 
@@ -62,12 +62,12 @@ Then converting that into a matrix:
 
 Then using that to run the test:
   chisq.test(A)
-  
-  
-  
-  
-  
-  
+
+
+
+
+
+
 > chi_test()
 Are you comparing two distributions or checking goodness of fit?
   Possible answers are 'comparing' and 'goodness'.
@@ -105,7 +105,7 @@ is really the theoretical one
 p =  0.1634917
 
 You can get this result by:
-  
+
   Inputting the sample data in a list:
   data  = c(10,8,14,9,5,16)
 
