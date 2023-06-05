@@ -4,7 +4,7 @@
 \alias{t_dist_demo}
 \title{T Test Demo}
 \usage{
-t_dist_demo(n = 4, samples = 10000)
+t_dist_demo(n = 6, samples = 10000)
 }
 \description{
 This function allows me to run a demo to illustrate the need for a non-normal t-distribution for small samples.
