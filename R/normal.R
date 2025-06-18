@@ -3,11 +3,11 @@
 #' This function prompts you to learn what type of normal computation you plan to do and directs you to the appropriate function. It produces the answer in the form of a sentence and displays a graph to visually inspect that you have computed what you expected.
 #' @export
 #' @examples
-#' 
+#'
 #' ********************
 #' FINDING PROPORTIONS:
 #' ********************
-#' 
+#'
 #' > normal()
 #' Are you calculating a proportion or a value? Possible answers are 'proportion' or 'value'. proportion
 #' Do you have one value or two values? Possible answers are 'one' and 'two'. one
@@ -16,10 +16,10 @@
 #' What is the standard deviation of your distribution? 1
 #' Do you want the proportion greater or less? Possible answers are 'greater' and 'less' less
 #' The proportion of observations with a value of -1.5 or more extreme is 0.0668072
-#' 
+#'
 #' You can get this result by typing:
 #'   pnorm(-1.5,0,1)
-#' 
+#'
 #'
 #' > normal()
 #' Are you calculating a proportion or a value? Possible answers are 'proportion' or 'value'. proportion
@@ -29,11 +29,11 @@
 #' What is the standard deviation of your distribution? 1
 #' Do you want the proportion greater or less? Possible answers are 'greater' and 'less' greater
 #' The proportion of observations with a value of -1.5 or more extreme is 0.9331928
-#' 
+#'
 #' You can get this result by typing:
 #'   1-pnorm(-1.5,0,1)
-#'   
-#'   
+#'
+#'
 #' > normal()
 #' Are you calculating a proportion or a value? Possible answers are 'proportion' or 'value'. proportion
 #' Do you have one value or two values? Possible answers are 'one' and 'two'. two
@@ -42,16 +42,16 @@
 #' What is the mean of your distribution? 0
 #' What is the standard deviation of your distribution? 1
 #' The proportion of observations between -1.2 and -0.8 is 0.09678573
-#' 
+#'
 #' You can get this result by typing:
 #'   pnorm(-0.8,0,1)-pnorm(-1.2,0,1)
-#'   
-#'   
-#'   
+#'
+#'
+#'
 #' ***************
 #' FINDING VALUES:
 #' ***************
-#' 
+#'
 #' > normal()
 #' Are you calculating a proportion or a value? Possible answers are 'proportion' or 'value'. value
 #' What is the proportion you are interested in? 0.8
@@ -59,11 +59,11 @@
 #' What is the standard deviation of your distribution? 1
 #' Do you want the point that has that proportion less than it or more than it? Possible answers are 'less' or 'more'. more
 #' The proportion of observations with a value of -0.841621233572914 or more is 0.8
-#' 
+#'
 #' You can get this result by typing:
 #'   qnorm(1-0.8,0,1)
-#'   
-#'   
+#'
+#'
 #' > normal()
 #' Are you calculating a proportion or a value? Possible answers are 'proportion' or 'value'. value
 #' What is the proportion you are interested in? 0.7
@@ -71,13 +71,13 @@
 #' What is the standard deviation of your distribution? 1
 #' Do you want the point that has that proportion less than it or more than it? Possible answers are 'less' or 'more'. less
 #' The proportion of observations with a value of 0.524400512708041 or less is 0.7
-#' 
+#'
 #' You can get this result by typing:
 #'   qnorm(0.7,0,1)
 
 normal <- function(){
-  
-  prob = readline("Are you calculating a proportion or a value? Possible answers are 'proportion' or 'value'. ")
+  cat("Are you calculating a proportion or a value?\nPossible answers are 'proportion' or 'value'.\n")
+  prob = readline()
   while(prob != "proportion" &
         prob != "p" &
         prob != "Proportion" &
@@ -88,55 +88,70 @@ normal <- function(){
         prob != "Value" &
         prob != "v" &
         prob != "V"
-        ){cat('Please choose either proportion or value')
-    prob = readline("Are you calculating a proportion or a value? Possible answers are 'proportion' or 'value'. ")
+        ){cat('Please choose either proportion or value!\n')
+    cat("Are you calculating a proportion or a value?\nPossible answers are 'proportion' or 'value'.\n")
+    prob = readline()
   }
-  
+
   if(prob=="proportion" | prob=="p" | prob=="P" | prob=="Proportion" | prob=="prop" | prob=="Prop"){
-    
-    version = readline("Do you have one value or two values? Possible answers are 'one' and 'two'. ")
+
+    cat("Do you have one value or two values? \nPossible answers are 'one' and 'two'.\n")
+    version = readline()
     while(version != "one" &
           version != "1" &
           version != "two" &
           version != "2"
-    ){cat('Please choose either one or two')
-      version = readline("Do you have one value or two values? Possible answers are 'one' and 'two'. ")
+    ){cat('Please choose either one or two!\n')
+      cat("Do you have one value or two values? \nPossible answers are 'one' and 'two'.\n")
+      version = readline()
     }
-  
+
     if(version == "one" | version == "1"){
-  x = as.numeric(readline("What is the value you are concerned with? "))
-  mu = as.numeric(readline("What is the mean of your distribution? "))
-  sigma = as.numeric(readline("What is the standard deviation of your distribution? "))
-  type = readline("Do you want the proportion greater or less? Possible answers are 'greater' and 'less' ")
-  
+      cat("What is the value you are concerned with?")
+  x = as.numeric(readline())
+  cat("What is the mean of your distribution?")
+  mu = as.numeric(readline())
+  cat("What is the standard deviation of your distribution?")
+  sigma = as.numeric(readline())
+  cat("Do you want the proportion greater or less? \nPossible answers are 'greater' and 'less' ")
+  type = readline()
+
   normal_p(x,mu,sigma,type)
     }
-  
+
   if(version == "two" | version == "2"){
-    x = as.numeric(readline("What is the left value? "))
-    y = as.numeric(readline("What is the right value? "))
-    mu = as.numeric(readline("What is the mean of your distribution? "))
-    sigma = as.numeric(readline("What is the standard deviation of your distribution? "))
-    
+    cat("What is the left value?")
+    x = as.numeric(readline())
+    cat("What is the right value?")
+    y = as.numeric(readline())
+    cat("What is the mean of your distribution?")
+    mu = as.numeric(readline())
+    cat("What is the standard deviation of your distribution?")
+    sigma = as.numeric(readline())
+
     normal_p2(x,y,mu,sigma)
   }
-    
+
   }
-  
+
   if(prob=="value" | prob =="v" | prob=="V" | prob == "Value"){
-    q = as.numeric(readline("What is the proportion you are interested in? "))
-    while(q<0 | q>1){cat('Please choose a proportion between 0 and 1')
-      q = as.numeric(readline("What is the proportion you are interested in? "))
+    cat("What is the proportion you are interested in?")
+    q = as.numeric(readline())
+    while(q<0 | q>1){cat('Please choose a proportion between 0 and 1!\n')
+      cat("What is the proportion you are interested in?")
+      q = as.numeric(readline())
     }
-    
-    
-    mu = as.numeric(readline("What is the mean of your distribution? "))
-    sigma = as.numeric(readline("What is the standard deviation of your distribution? "))
-    type = readline("Do you want the point that has that proportion less than it or more than it? Possible answers are 'less' or 'more'. ")
+
+    cat("What is the mean of your distribution?")
+    mu = as.numeric(readline())
+    cat("What is the standard deviation of your distribution?")
+    sigma = as.numeric(readline())
+    cat("Do you want the point that has that proportion less than it or more than it? \nPossible answers are 'less' or 'more'.")
+    type = readline()
     # type = readline("Do you want the point that has that proportion less than it, that proportion more than it, or that proportion more extreme than it? Possible answers are 'less', 'more', or 'extreme'. ")
     # if(type=="extreme"){type="both"}
     normal_q(q,mu,sigma,type)
   }
-  
-  
+
+
 }

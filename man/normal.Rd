@@ -39,8 +39,8 @@ The proportion of observations with a value of -1.5 or more extreme is 0.9331928
 
 You can get this result by typing:
   1-pnorm(-1.5,0,1)
-  
-  
+
+
 > normal()
 Are you calculating a proportion or a value? Possible answers are 'proportion' or 'value'. proportion
 Do you have one value or two values? Possible answers are 'one' and 'two'. two
@@ -52,9 +52,9 @@ The proportion of observations between -1.2 and -0.8 is 0.09678573
 
 You can get this result by typing:
   pnorm(-0.8,0,1)-pnorm(-1.2,0,1)
-  
-  
-  
+
+
+
 ***************
 FINDING VALUES:
 ***************
@@ -69,8 +69,8 @@ The proportion of observations with a value of -0.841621233572914 or more is 0.8
 
 You can get this result by typing:
   qnorm(1-0.8,0,1)
-  
-  
+
+
 > normal()
 Are you calculating a proportion or a value? Possible answers are 'proportion' or 'value'. value
 What is the proportion you are interested in? 0.7
